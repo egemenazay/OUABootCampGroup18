@@ -1,2 +1,17 @@
 # OUABootCampGroup18
- OUA Final Bootcamp
+### Takım İsmi
+ Team18
+
+## Ürün ile İlgili Bilgiler
+### Takım Elemanları
+--
+### Ürün İsmi
+--
+### Ürün Açıklaması
+--
+### Ürün Özellikleri
+--
+### Hedef Kitle
+
+
+
