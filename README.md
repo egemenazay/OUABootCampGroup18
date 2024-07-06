@@ -41,7 +41,7 @@ Cats vs Human bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir g�
 - **Toplantılar**: Haftada en az iki toplantı aldık. Bu toplantıların saatlerine WhatsApp üzerinden karar verildi ve Discord üzerinden gerçekleştirildi.
 - **Tasarım ve Developing Ayrımı**: Tasarım ve kodlama kısmını takımımızdaki bireylerin yatkın olduğu alanlara göre dağlımını yaptık.
 - **Sprint 1 board update**: Sprint Board Screenshot:
-<img width="1171" alt="Trello 1  Sprint" src="[https://github.com/kevsoOther/U-21-Cherry-Chasers/assets/170053523/4802c0e5-d5ca-4d28-90d1-243e742f5974](https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-07-07%20003256.png)">
+<img width="1171" alt="Trello 1  Sprint" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-07-07%20003256.png">
 - **Geliştirme Süreci Görselleri**:
 - 
 - **Sprint Review**: 
