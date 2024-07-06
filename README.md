@@ -38,12 +38,12 @@ Cats vs Human bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir g�
 
 - Sprint içi puan değerlendirmesi 10 olarak belirlenmiştir.
 - **Puan tamamlama mantığı**: Projede tamamlanması gerek backlog'ların total puanı 26'dır. İlk Sprint için bitirilmesi istenilen puan sayısı 7'dir ve hedefe ulaşılmıştır.
-
-
+- **Toplantılar**: Haftada en az iki toplantı aldık. Bu toplantıların saatlerine WhatsApp üzerinden karar verildi ve Discord üzerinden gerçekleştirildi.
 - **Tasarım ve Developing Ayrımı**: Tasarım ve kodlama kısmını takımımızdaki bireylerin yatkın olduğu alanlara göre dağlımını yaptık.
 - **Sprint 1 board update**: Sprint Board Screenshot:
 - 
-
+- **Geliştirme Süreci Görselleri**:
+- 
 - **Sprint Review**: 
 - Oyunun genel oynanuş mantığı ve görsel dizaynına karar verildi, sistemlerin prototip halleri yapıldı.
 - Sprint Review katılımcıları: Egemen Azay, Doğukan Taha Tıraş, Ege Gürel, Elifsu Genç
