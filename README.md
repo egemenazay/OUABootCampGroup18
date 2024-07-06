@@ -53,8 +53,8 @@ Cats vs Human bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir g�
 
 <strong>Sprint Review:<strong/>
   
-Oyunun genel oynanuş mantığı ve görsel dizaynına karar verildi, sistemlerin prototip halleri yapıldı.
-Sprint Review katılımcıları: Egemen Azay, Doğukan Taha Tıraş, Ege Gürel, Elifsu Genç
+- Oyunun genel oynanuş mantığı ve görsel dizaynına karar verildi, sistemlerin prototip halleri yapıldı.
+- Sprint Review katılımcıları: Egemen Azay, Doğukan Taha Tıraş, Ege Gürel, Elifsu Genç
 
 <strong>Sprint Retrospective:<strong/>
 
