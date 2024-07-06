@@ -2,7 +2,7 @@
 
 Unity Group 18
 
-# Ürün İle İlgili Bilgiler
+# Oyun İle İlgili Bilgiler
 
 ## Takım Elemanları
 - Egemen Azay: Scrum Master / Product Owner / Developer
@@ -17,8 +17,8 @@ Cat Keeper
 ## Product Backlog URL
 [Unity Group 18 Trello Backlog Board](https://trello.com/b/OcLK5jfy/bootcamp-2024)
 
-## Ürün Açıklaması
-Cats vs Human bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir gün komşusu olarak yaramaz kedilerine bakmaya geldiğimiz bir günde geçer. Oyunda maximum 4 kedi ve 1 insan yer almaktadır. Bir veya birden fazla ev ortamında geçen oyunumuzda kedilerimiz(Oyuncular) etrafı dağıtıp yaramazlık yaparken insan(Yine bir oyuncu) karakter kedilerin arkasını temizleyip onları durdurmaya çalışmaktadır.
+## Oyun Açıklaması
+Cat Keeper bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir gün komşusu olarak yaramaz kedilerine bakmaya geldiğimiz bir günde geçer. Oyunda maximum 4 kedi ve 1 insan yer almaktadır. Bir veya birden fazla ev ortamında geçen oyunumuzda kedilerimiz(Oyuncular) etrafı dağıtıp yaramazlık yaparken insan(Yine bir oyuncu) karakter kedilerin arkasını temizleyip onları durdurmaya çalışmaktadır.
 
 ## Oyunun Özellikleri
 - 3D
