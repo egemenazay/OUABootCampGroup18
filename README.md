@@ -43,21 +43,24 @@ Cats vs Human bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir g�
 - **Sprint 1 board update**: Sprint Board Screenshot:
 <img width="1171" alt="Trello 1  Sprint" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-07-07%20003256.png">
 <strong>Geliştirme Sürecinden Görseller:<strong/>
+
+
 <img width="736" alt="WP-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-07-07%20005101.png">
 <img width="987" alt="Toplantı-SS" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Ekran_goruntusu_2024-06-27_222047.png">
 <img width="962" alt="Demo-SS1" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Kedi%20Demo.png">
 <img width="240" alt="Demo-GIF1" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/%C4%B0simsiz%20video%20%E2%80%90%20Clipchamp%20ile%20yap%C4%B1ld%C4%B1.gif">
 <img width="960" alt="Demo-SS2" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Ekran_goruntusu_2024-07-06_194423.png">
-**Sprint Review:**
+
+<strong>Sprint Review:<strong/>
+  
 Oyunun genel oynanuş mantığı ve görsel dizaynına karar verildi, sistemlerin prototip halleri yapıldı.
 Sprint Review katılımcıları: Egemen Azay, Doğukan Taha Tıraş, Ege Gürel, Elifsu Genç
 
-- **Sprint Retrospective:**
+<strong>Sprint Retrospective:<strong/>
+
 - Tasarım grubunun görev dağılımı yapıldı ev ve karakter modellenmelerine başlandı
 - Developerlar arasında görevlerin dağılımı yapıldı ve prototipleri tamamlandı
 
-
----
 
 # Sprint 2
 
