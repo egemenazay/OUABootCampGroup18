@@ -48,7 +48,7 @@ Cats vs Human bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir g�
 <img width="962" alt="Demo-SS1" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Kedi%20Demo.png">
 <img width="240" alt="Demo-GIF1" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/%C4%B0simsiz%20video%20%E2%80%90%20Clipchamp%20ile%20yap%C4%B1ld%C4%B1.gif">
 <img width="960" alt="Demo-SS2" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Ekran_goruntusu_2024-07-06_194423.png">
-- **Sprint Review**: 
+- **Sprint Review:**
 Oyunun genel oynanuş mantığı ve görsel dizaynına karar verildi, sistemlerin prototip halleri yapıldı.
 Sprint Review katılımcıları: Egemen Azay, Doğukan Taha Tıraş, Ege Gürel, Elifsu Genç
 
