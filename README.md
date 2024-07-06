@@ -52,12 +52,16 @@ Cat Keeper bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir gün 
 <strong>Sprint Review:<strong/>
   
 - Oyunun genel oynanuş mantığı ve görsel dizaynına karar verildi, sistemlerin prototip halleri yapıldı.
+- Karakterlerin yapımını developer'lar arasında paylaştık. Doğukan:Kedi Ege:İnsan Egemen:Eşyaların Davranışları
+- Dizayn kısmında ev ve karakter modellerini Erva ve Elifsu birlikte yürütülmesine karar verildi.
+- Oyunun kesin olarak Online olması yetiştirme durumumza göre AI eklenmesine karar verdik ve takvim üzerinde bir planlama yaptık.
 - Sprint Review katılımcıları: Egemen Azay, Doğukan Taha Tıraş, Ege Gürel, Elifsu Genç
 
 <strong>Sprint Retrospective:<strong/>
 
-- Tasarım grubunun görev dağılımı yapıldı ev ve karakter modellenmelerine başlandı
-- Developerlar arasında görevlerin dağılımı yapıldı ve prototipleri tamamlandı
+- Tasarım grubunun görev dağılımı yapıldı ev ve karakter modellenmelerine başlandı.
+- Karakter ve Eşyla etkileşiminin prototipi oluşturuldu.
+- Developerlar arasında görevlerin dağılımı yapıldı ve prototipleri tamamlandı.
 
 
 # Sprint 2
