@@ -51,7 +51,7 @@ Cat Keeper bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir gün 
 
 <strong>Sprint Review:<strong/>
   
-- Oyunun genel oynanuş mantığı ve görsel dizaynına karar verildi, sistemlerin prototip halleri yapıldı.
+- Oyunun genel oynanış mantığı ve görsel dizaynına karar verildi, sistemlerin prototip halleri yapıldı.
 - Karakterlerin yapımını developer'lar arasında paylaştık. Doğukan:Kedi Ege:İnsan Egemen:Eşyaların Davranışları
 - Dizayn kısmında ev ve karakter modellerini Erva ve Elifsu birlikte yürütülmesine karar verildi.
 - Oyunun kesin olarak Online olması yetiştirme durumumza göre AI eklenmesine karar verdik ve takvim üzerinde bir planlama yaptık.
