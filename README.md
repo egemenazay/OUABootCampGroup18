@@ -15,7 +15,7 @@ Unity Group 18
 Cat Keeper
 
 ## Product Backlog URL
-
+[Unity Group 18 Trello Backlog Board](https://trello.com/b/OcLK5jfy/bootcamp-2024)
 
 ## Ürün Açıklaması
 Cats vs Human bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir gün komşusu olarak yaramaz kedilerine bakmaya geldiğimiz bir günde geçer. Oyunda maximum 4 kedi ve 1 insan yer almaktadır. Bir veya birden fazla ev ortamında geçen oyunumuzda kedilerimiz(Oyuncular) etrafı dağıtıp yaramazlık yaparken insan(Yine bir oyuncu) karakter kedilerin arkasını temizleyip onları durdurmaya çalışmaktadır.
@@ -36,18 +36,13 @@ Cats vs Human bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir g�
 
 # Sprint 1
 
-- **Sprint içinde tamamlanması tahmin edilen puan**:
+- Sprint içi puan değerlendirmesi 10 olarak belirlenmiştir.
+- **Puan tamamlama mantığı**: Projede tamamlanması gerek backlog'ların total puanı 26'dır. İlk Sprint için bitirilmesi istenilen puan sayısı 7'dir ve hedefe ulaşılmıştır.
 
 
-- **Puan tamamlama mantığı**: 
-
-
-
-- **Sprint board update**: Sprint board screenshotları: 
-
-
-
-- **Ürün Durumu**: Ekran görüntüleri:
+- **Tasarım ve Developing Ayrımı**: Tasarım ve kodlama kısmını takımımızdaki bireylerin yatkın olduğu alanlara göre dağlımını yaptık.
+- **Sprint 1 board update**: Sprint Board Screenshot:
+- 
 
 - **Sprint Review**: 
 - Oyunun genel oynanuş mantığı ve görsel dizaynına karar verildi, sistemlerin prototip halleri yapıldı.
@@ -62,47 +57,13 @@ Cats vs Human bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir g�
 
 # Sprint 2
 
-- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
-
-
-- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 340 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi.
-
-
-
-- **Sprint board update**: Sprint board screenshotları: 
-
-
-
-- **Ürün Durumu**: Ekran görüntüleri:
-
-- **Sprint Review**: 
-
-
-- **Sprint Retrospective:**
-
 
 
 ---
 
 # Sprint 3
 
-- **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
-
-- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 340 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi.
-
-
-
-- **Sprint board update**: Sprint board screenshotları: 
-
-
-
-- **Ürün Durumu**: Ekran görüntüleri:
-
-- **Sprint Review**: 
-
-
-- **Sprint Retrospective:**
 
 
 
