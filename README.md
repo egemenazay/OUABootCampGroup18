@@ -36,7 +36,7 @@ Cat Keeper bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir gün 
 
 # Sprint 1
 
-- Sprint içi puan değerlendirmesi 10 olarak belirlenmiştir.
+- Sprint içi puan değerlendirmesi 7 olarak belirlenmiştir.
 - **Puan tamamlama mantığı**: Projede tamamlanması gerek backlog'ların total puanı 26'dır. İlk Sprint için bitirilmesi istenilen puan sayısı 7'dir ve hedefe ulaşılmıştır.
 - **Toplantılar**: Haftada en az iki toplantı aldık. Bu toplantıların saatlerine WhatsApp üzerinden karar verildi ve Discord üzerinden gerçekleştirildi.
 - **Tasarım ve Developing Ayrımı**: Tasarım ve kodlama kısmını takımımızdaki bireylerin yatkın olduğu alanlara göre dağlımını yaptık.
@@ -62,6 +62,7 @@ Cat Keeper bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir gün 
 - Tasarım grubunun görev dağılımı yapıldı ev ve karakter modellenmelerine başlandı.
 - Karakter ve eşya ile etkileşiminin prototipi oluşturuldu.
 - Developerlar arasında görevlerin dağılımı yapıldı ve prototipleri tamamlandı.
+- Sonraki Sprint için görev dağılımı ve gereken süreleri belirlendi.
 
 
 # Sprint 2
