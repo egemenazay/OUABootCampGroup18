@@ -60,7 +60,7 @@ Cat Keeper bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir gün 
 <strong>Sprint Retrospective:<strong/>
 
 - Tasarım grubunun görev dağılımı yapıldı ev ve karakter modellenmelerine başlandı.
-- Karakter ve Eşyla etkileşiminin prototipi oluşturuldu.
+- Karakter ve eşya ile etkileşiminin prototipi oluşturuldu.
 - Developerlar arasında görevlerin dağılımı yapıldı ve prototipleri tamamlandı.
 
 
