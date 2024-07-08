@@ -36,12 +36,12 @@ Cat Keeper bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir gün 
 
 # Sprint 1
 
-- Sprint içi puan değerlendirmesi 7 olarak belirlenmiştir.
-- **Puan tamamlama mantığı**: Projede tamamlanması gerek backlog'ların total puanı 26'dır. İlk Sprint için bitirilmesi istenilen puan sayısı 7'dir ve hedefe ulaşılmıştır.
+- Sprint içi puan değerlendirmesi 80 Puan olarak belirlenmiştir.
+- **Puan tamamlama mantığı**: Projede tamamlanması gereken 'Kullanıcı Hikayesi' toplam puanı 270'dir. İlk Sprint toplanması gereken puan 80'dir ve bu hedefi gerçekleştirdik.
 - **Toplantılar**: Haftada en az iki toplantı aldık. Bu toplantıların saatlerine WhatsApp üzerinden karar verildi ve Discord üzerinden gerçekleştirildi.
 - **Tasarım ve Developing Ayrımı**: Tasarım ve kodlama kısmını takımımızdaki bireylerin yatkın olduğu alanlara göre dağlımını yaptık.
 - **Sprint 1 board update**: Sprint Board Screenshot:
-<img width="1171" alt="Trello 1  Sprint" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-07-07%20003256.png">
+<img width="1171" alt="Trello 1  Sprint" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-07-08%20220254.png">
 <strong>Geliştirme Sürecinden Görseller:<strong/>
 <img width="736" alt="WP-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-07-07%20005101.png">
 <img width="987" alt="Toplantı-SS" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Ekran_goruntusu_2024-06-27_222047.png">
