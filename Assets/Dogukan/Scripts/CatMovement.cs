@@ -2,56 +2,78 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(CharacterController))]
 public class CatMovement : MonoBehaviour
 {
-    public float walkSpeed = 2f;
-    public float runSpeed = 5f;
-    public float jumpForce = 5f;
-    public float maxStamina = 4f; // Maksimum stamina süresi
-    public float staminaRecoveryRate = 1f; // Saniyede ne kadar stamina geri kazanýlýr
+    public Camera playerCamera;
+    public float walkSpeed = 6f;
+    public float runSpeed = 12f;
+    public float jumpPower = 7f;
+    public float gravity = 10f;
 
-    private float currentStamina;
-    private bool isRunning;
-    private Rigidbody rb;
 
-    private void Start()
+    public float lookSpeed = 2f;
+    public float lookXLimit = 45f;
+
+
+    Vector3 moveDirection = Vector3.zero;
+    float rotationX = 0;
+
+    public bool canMove = true;
+
+
+    CharacterController characterController;
+    void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        currentStamina = maxStamina; // Baþlangýçta maksimum stamina ile baþla
+        characterController = GetComponent<CharacterController>();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
 
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+        #region Handles Movment
+        Vector3 forward = transform.TransformDirection(Vector3.forward);
+        Vector3 right = transform.TransformDirection(Vector3.right);
 
-        if (Input.GetKey(KeyCode.LeftShift) && currentStamina > 0)
+        // Press Left Shift to run
+        bool isRunning = Input.GetKey(KeyCode.LeftShift);
+        float curSpeedX = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Vertical") : 0;
+        float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;
+        float movementDirectionY = moveDirection.y;
+        moveDirection = (forward * curSpeedX) + (right * curSpeedY);
+
+        #endregion
+
+        #region Handles Jumping
+        if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
         {
-            // Koþ
-            rb.MovePosition(transform.position + movement * runSpeed * Time.deltaTime);
-            currentStamina -= Time.deltaTime; // Stamina azalt
-            isRunning = true;
+            moveDirection.y = jumpPower;
         }
         else
         {
-            // Yürü
-            rb.MovePosition(transform.position + movement * walkSpeed * Time.deltaTime);
-            isRunning = false;
+            moveDirection.y = movementDirectionY;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!characterController.isGrounded)
         {
-            // Zýpla
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            moveDirection.y -= gravity * Time.deltaTime;
         }
 
-        // Stamina geri kazanýmý
-        if (!isRunning && currentStamina < maxStamina)
+        #endregion
+
+        #region Handles Rotation
+        characterController.Move(moveDirection * Time.deltaTime);
+
+        if (canMove)
         {
-            currentStamina += staminaRecoveryRate * Time.deltaTime;
-            currentStamina = Mathf.Clamp(currentStamina, 0, maxStamina); // Stamina maksimum deðeri aþmasýn
+            rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
+            rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
+            playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
+            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
+
+        #endregion
     }
 }
