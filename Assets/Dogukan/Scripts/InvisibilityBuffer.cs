@@ -4,37 +4,29 @@ using UnityEngine;
 public class InvisibilityBuffer : MonoBehaviour
 {
     private Renderer catRenderer;
-    private bool isInvisible = false;
+    private Collider catCollider;
 
     void Start()
     {
         catRenderer = GetComponent<Renderer>();
-        if (catRenderer == null)
-        {
-            Debug.LogError("Renderer component is missing on Cat object.");
-        }
+        catCollider = GetComponent<Collider>();
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("invisibilityBuffer"))
         {
-            StartCoroutine(TurnInvisible());
             Destroy(other.gameObject);
+            StartCoroutine(BecomeInvisible());
         }
     }
 
-    private IEnumerator TurnInvisible()
+    private IEnumerator BecomeInvisible()
     {
-        if (catRenderer != null)
-        {
-            isInvisible = true;
-            catRenderer.enabled = false;
-
-            yield return new WaitForSeconds(3);
-
-            catRenderer.enabled = true;
-            isInvisible = false;
-        }
+        catRenderer.enabled = false;  // Cat objesini görünmez yap
+        catCollider.enabled = false;  // Cat objesinin collider'ýný devre dýþý býrak
+        yield return new WaitForSeconds(5);  // 5 saniye bekle
+        catRenderer.enabled = true;  // Cat objesini tekrar görünür yap
+        catCollider.enabled = true;  // Cat objesinin collider'ýný tekrar etkinleþtir
     }
 }
