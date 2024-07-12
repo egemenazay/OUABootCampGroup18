@@ -3,31 +3,39 @@ using UnityEngine;
 
 public class JumpBuffer : MonoBehaviour
 {
-    public float duration = 3f;
-    private bool isActive = false;
+    private CatMovement catMovement;
+    public float speedMultiplier = 2f;
+    public float duration = 5f;
 
-    private void OnTriggerEnter(Collider other)
+    void Start()
     {
-        if (other.CompareTag("Cat") && !isActive)
+        catMovement = GetComponent<CatMovement>();
+        if (catMovement == null)
         {
-            StartCoroutine(DoubleJumpPower(other));
+            Debug.LogError("CatMovement component is missing on Cat object.");
         }
     }
 
-    private IEnumerator DoubleJumpPower(Collider player)
+    void OnTriggerEnter(Collider other)
     {
-        isActive = true;
-        CatMovement catMovement = player.GetComponent<CatMovement>();
+        if (other.CompareTag("jumpBuffer"))
+        {
+            StartCoroutine(BoostSpeed());
+            Destroy(other.gameObject);
+        }
+    }
 
+    private IEnumerator BoostSpeed()
+    {
         if (catMovement != null)
         {
-            catMovement.jumpPower *= 2;
+            float originalJumpPower = catMovement.jumpPower;
+
+           catMovement.jumpPower *= speedMultiplier;
 
             yield return new WaitForSeconds(duration);
 
-            catMovement.jumpPower /= 2;
+            catMovement.jumpPower = originalJumpPower;
         }
-
-        Destroy(gameObject);
     }
 }

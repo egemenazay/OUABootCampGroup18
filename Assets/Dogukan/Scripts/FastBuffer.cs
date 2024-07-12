@@ -3,36 +3,42 @@ using UnityEngine;
 
 public class FastBuffer : MonoBehaviour
 {
-    public float duration = 3f;
-    private bool isActive = false;
+    private CatMovement catMovement;
+    public float speedMultiplier = 2f;
+    public float duration = 5f;
 
-    private void OnTriggerEnter(Collider other)
+    void Start()
     {
-
-        if (other.CompareTag("Cat") && !isActive)
+        catMovement = GetComponent<CatMovement>();
+        if (catMovement == null)
         {
-            StartCoroutine(DoubleSpeed(other));
+            Debug.LogError("CatMovement component is missing on Cat object.");
         }
-        
     }
 
-    private IEnumerator DoubleSpeed(Collider player)
+    void OnTriggerEnter(Collider other)
     {
-        isActive = true;
-        CatMovement catMovement = player.GetComponent<CatMovement>();
+        if (other.CompareTag("fastBuffer"))
+        {
+            StartCoroutine(BoostSpeed());
+            Destroy(other.gameObject);
+        }
+    }
 
-
+    private IEnumerator BoostSpeed()
+    {
         if (catMovement != null)
         {
-            catMovement.walkSpeed *= 2;
-            catMovement.runSpeed *= 2;
+            float originalWalkSpeed = catMovement.walkSpeed;
+            float originalRunSpeed = catMovement.runSpeed;
+
+            catMovement.walkSpeed *= speedMultiplier;
+            catMovement.runSpeed *= speedMultiplier;
 
             yield return new WaitForSeconds(duration);
 
-            catMovement.walkSpeed /= 2;
-            catMovement.runSpeed /= 2;
+            catMovement.walkSpeed = originalWalkSpeed;
+            catMovement.runSpeed = originalRunSpeed;
         }
-        Destroy(gameObject);
-
     }
 }
