@@ -3,37 +3,38 @@ using UnityEngine;
 
 public class InvisibilityBuffer : MonoBehaviour
 {
-    public float duration = 3f;
-   // private bool isActive = false;
-    public GameObject catbody;
+    private Renderer catRenderer;
+    private bool isInvisible = false;
 
-    private void OnTriggerEnter(Collider other)
+    void Start()
     {
-        if (other.CompareTag("Cat"))
+        catRenderer = GetComponent<Renderer>();
+        if (catRenderer == null)
         {
-            StartCoroutine(MakeInvisible(other));
+            Debug.LogError("Renderer component is missing on Cat object.");
         }
     }
 
-    private IEnumerator MakeInvisible(Collider player)
+    void OnTriggerEnter(Collider other)
     {
-        //isActive = true;
-        this.gameObject.SetActive(false);
-        MeshRenderer playerRenderer = catbody.GetComponentInChildren<MeshRenderer>();
-
-        if (playerRenderer != null)
+        if (other.CompareTag("invisibilityBuffer"))
         {
-            playerRenderer.enabled = false;
-
-            yield return new WaitForSeconds(duration);
-
-            playerRenderer.enabled = true;
+            StartCoroutine(TurnInvisible());
+            Destroy(other.gameObject);
         }
-        else
+    }
+
+    private IEnumerator TurnInvisible()
+    {
+        if (catRenderer != null)
         {
-            Debug.LogWarning("Player does not have Renderer component.");
-        }
+            isInvisible = true;
+            catRenderer.enabled = false;
 
-       
+            yield return new WaitForSeconds(3);
+
+            catRenderer.enabled = true;
+            isInvisible = false;
+        }
     }
 }
