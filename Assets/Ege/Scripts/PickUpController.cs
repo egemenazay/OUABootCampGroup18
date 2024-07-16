@@ -60,9 +60,14 @@ public class PickUpController : MonoBehaviour
 
             Debug.Log("Nesne alýndý: " + pickableObject.name);
 
-            // Eðer nesne bir kedi 5 saniye sonra býrak
+            // Eðer nesne bir kedi ise, BoxCollider'ýnýn isTrigger'ýný true yap
             if (pickableObject.CompareTag("Cat"))
             {
+                BoxCollider catCollider = pickableObject.GetComponent<BoxCollider>();
+                if (catCollider != null)
+                {
+                    catCollider.isTrigger = true;
+                }
                 Invoke("DropObject", 5f);
             }
 
@@ -70,7 +75,7 @@ public class PickUpController : MonoBehaviour
             Rigidbody rb = pickableObject.GetComponent<Rigidbody>();
             if (rb != null)
             {
-                rb.isKinematic = true;
+                rb.isKinematic = false;
             }
         }
     }
@@ -84,11 +89,21 @@ public class PickUpController : MonoBehaviour
             // Nesneyi oyuncunun elinden býrak
             pickableObject.transform.SetParent(null);
 
+            // Eðer nesne bir kedi ise, BoxCollider'ýnýn isTrigger'ýný false yap
+            if (pickableObject.CompareTag("Cat"))
+            {
+                BoxCollider catCollider = pickableObject.GetComponent<BoxCollider>();
+                if (catCollider != null)
+                {
+                    catCollider.isTrigger = false;
+                }
+            }
+
             // Rigidbody'yi yeniden etkinleþtir
             Rigidbody rb = pickableObject.GetComponent<Rigidbody>();
             if (rb != null)
             {
-                rb.isKinematic = true;
+                rb.isKinematic = false;
             }
 
             // Kediyi zemine yerleþtir
