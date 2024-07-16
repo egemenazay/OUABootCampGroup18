@@ -21,9 +21,8 @@ public class ObjectGrabable : MonoBehaviour
     }
     public void Drop()
     {
-        this.objectGrabPointTransform = objectPutPointTransform;
+        objectGrabPointTransform = objectPutPointTransform;
         rgbdy.useGravity = true;
-        Invoke(nameof(MakeTransformNull),2f);
     }
     
 
@@ -37,8 +36,5 @@ public class ObjectGrabable : MonoBehaviour
         }
     }
 
-    public void MakeTransformNull()
-    {
-        objectGrabPointTransform = null;
-    }
+  
 }
