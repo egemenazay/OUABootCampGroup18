@@ -6,7 +6,11 @@ TagManager:
   tags:
   - Pickable
   - Table
-  - Item
+  - timeBuffer
+  - Cat
+  - invisibilityBuffer
+  - fastBuffer
+  - jumpBuffer
   layers:
   - Default
   - TransparentFX
