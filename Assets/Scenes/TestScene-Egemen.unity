@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 78274252}
   m_Layer: 0
   m_Name: Item
-  m_TagString: Pickable
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,7 +239,7 @@ Rigidbody:
   m_GameObject: {fileID: 78274246}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0.5
+  m_Drag: 5
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -1873,6 +1873,7 @@ GameObject:
   - component: {fileID: 1263290105}
   - component: {fileID: 1263290107}
   - component: {fileID: 1263290108}
+  - component: {fileID: 1263290109}
   - component: {fileID: 1263290110}
   m_Layer: 3
   m_Name: TestPlayer
@@ -1994,7 +1995,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4014413, y: 2.2444625, z: 1.4220017}
   m_Center: {x: 0.04519713, y: -0.09737784, z: 0.6805939}
---- !u!114 &1263290110
+--- !u!114 &1263290109
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2003,17 +2004,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 1263290102}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8405ed5b1cba81142a034fcba47ea360, type: 3}
+  m_Script: {fileID: 11500000, guid: cc045f0ed7d268e4bad48bb4ce1fc39d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPickUpTransform: {fileID: 1263290103}
-  objectGrabPointTransform: {fileID: 1964474203}
-  pickUpLayerMask:
-    serializedVersion: 2
-    m_Bits: 119
-  dropLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
+  handPosition: {fileID: 1964474203}
+--- !u!95 &1263290110
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263290102}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1417879907
 GameObject:
   m_ObjectHideFlags: 0
@@ -2657,7 +2672,7 @@ Transform:
   m_GameObject: {fileID: 1964474202}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0, z: 0.5}
+  m_LocalPosition: {x: 0.431, y: 0, z: 0.496}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

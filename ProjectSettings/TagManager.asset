@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pickable
   - Table
+  - Item
   layers:
   - Default
   - TransparentFX
