@@ -9,6 +9,7 @@ public class ThrowingTutorial : MonoBehaviour
     public Transform cam;
     public Transform attackPoint;
     public GameObject objectToThrow;
+    public GameObject collisionVFX; // Çarpýþma VFX prefab'i
 
     [Header("Settings")]
     public int totalThrows;
@@ -28,7 +29,7 @@ public class ThrowingTutorial : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(throwKey) && readyToThrow && totalThrows > 0)
+        if (Input.GetKeyDown(throwKey) && readyToThrow && totalThrows > 0)
         {
             Throw();
         }
@@ -49,7 +50,7 @@ public class ThrowingTutorial : MonoBehaviour
 
         RaycastHit hit;
 
-        if(Physics.Raycast(cam.position, cam.forward, out hit, 500f))
+        if (Physics.Raycast(cam.position, cam.forward, out hit, 500f))
         {
             forceDirection = (hit.point - attackPoint.position).normalized;
         }

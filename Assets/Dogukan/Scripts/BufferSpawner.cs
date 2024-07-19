@@ -28,7 +28,16 @@ public class BufferSpawner : MonoBehaviour
             );
 
             int randomIndex = Random.Range(0, bufferPrefabs.Length);
-            Instantiate(bufferPrefabs[randomIndex], spawnPosition, Quaternion.identity);
+
+            // bufferPrefabs dizisindeki prefab'lerin geçerli olup olmadýðýný kontrol edin
+            if (bufferPrefabs[randomIndex] != null)
+            {
+                Instantiate(bufferPrefabs[randomIndex], spawnPosition, Quaternion.identity);
+            }
+            else
+            {
+                Debug.LogWarning("Index " + randomIndex + " deki buffer prefab eksik veya yok edildi.");
+            }
         }
     }
 }

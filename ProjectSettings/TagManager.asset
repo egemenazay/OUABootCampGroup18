@@ -11,6 +11,7 @@ TagManager:
   - invisibilityBuffer
   - fastBuffer
   - jumpBuffer
+  - Furniture
   layers:
   - Default
   - TransparentFX
