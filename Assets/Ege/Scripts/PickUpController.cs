@@ -5,7 +5,9 @@ using UnityEngine;
 public class PickUpController : MonoBehaviour
 {
     public GameObject holdPosition;
+    public GameObject targetPosition; // Boþ GameObject referansý
     public float pickUpRange = 2f;  // Bu mesafeyi gerektiði gibi ayarlayýn
+    public float placeRange = 2f;   // Yerleþtirme mesafesi
     private GameObject pickableObject;
     private Collider[] colliders;
     private bool isHoldingObject = false;
@@ -97,6 +99,28 @@ public class PickUpController : MonoBehaviour
                 {
                     catCollider.isTrigger = false;
                 }
+
+                // targetPosition'a olan mesafeyi kontrol et
+                if (targetPosition != null && Vector3.Distance(pickableObject.transform.position, targetPosition.transform.position) <= placeRange)
+                {
+                    pickableObject.transform.position = targetPosition.transform.position;
+                    pickableObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+                    Debug.Log("Kedi targetPosition'a yerleþtirildi: " + pickableObject.name);
+                }
+                else
+                {
+                    // Kediyi zemine yerleþtir
+                    RaycastHit hit;
+                    if (Physics.Raycast(pickableObject.transform.position, Vector3.down, out hit))
+                    {
+                        float groundDistance = hit.distance;
+                        if (groundDistance > 0.5f)
+                        {
+                            // Kediyi zemine taþý
+                            pickableObject.transform.position = new Vector3(pickableObject.transform.position.x, pickableObject.transform.position.y - groundDistance + 0.5f, pickableObject.transform.position.z);
+                        }
+                    }
+                }
             }
 
             // Rigidbody'yi yeniden etkinleþtir
@@ -104,18 +128,6 @@ public class PickUpController : MonoBehaviour
             if (rb != null)
             {
                 rb.isKinematic = false;
-            }
-
-            // Kediyi zemine yerleþtir
-            RaycastHit hit;
-            if (Physics.Raycast(pickableObject.transform.position, Vector3.down, out hit))
-            {
-                float groundDistance = hit.distance;
-                if (groundDistance > 0.5f)
-                {
-                    // Kediyi zemine taþý
-                    pickableObject.transform.position = new Vector3(pickableObject.transform.position.x, pickableObject.transform.position.y - groundDistance + 0.5f, pickableObject.transform.position.z);
-                }
             }
 
             Debug.Log("Nesne býrakýldý: " + pickableObject.name);
