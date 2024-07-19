@@ -32,7 +32,7 @@ public class BufferSpawner : MonoBehaviour
             // bufferPrefabs dizisindeki prefab'lerin geçerli olup olmadýðýný kontrol edin
             if (bufferPrefabs[randomIndex] != null)
             {
-                Instantiate(bufferPrefabs[randomIndex], spawnPosition, Quaternion.identity);
+                Instantiate(bufferPrefabs[randomIndex], spawnPosition, Quaternion.Euler(new Vector3(30, 0, 0)));
             }
             else
             {
