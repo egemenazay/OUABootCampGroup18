@@ -67,7 +67,30 @@ Cat Keeper bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir gün 
 
 # Sprint 2
 
+- Sprint içi puan değerlendirmesi 80 Puan olarak belirlenmiştir ve bu puan toplanmıştır.
+- **Toplantılar**: 2. Sprint ile birlikte toplantılarımızın sayısını arttırdık ve yaptığımız değişiklikleri daha yakından takip ettik.
+- **Görev Dağılımı**: Kodlama ve dizayn taraflarında işlerin hafiflemesi amacıyla bazı değişikliklere gittik.
+- **Sprint 2 board update**: Sprint Board Screenshot:
+<img width="1531" alt="Trello 2  Sprint" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/TrelloUpdate2.png">
+<strong>Geliştirme Sürecinden Görseller:<strong/>
+<img width="798" alt="ev-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/Ev%20ss.png">
+<img width="1919" alt="kedi-animasyon-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/kedianimasyonss.png">
+<img width="1918" alt="powerup-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/powerupss.png">
 
+<strong>Sprint Review:<strong/>
+  
+- İnsan ve kedi sistemi yapıldı
+- PowerUp sistemi yapıldı
+- “Dağınıklık Barı” sistemi yapıldı
+- Ev dizaynı yapıldı
+- Kedi ve insan animasyonları tamamlandı
+- Sprint Review katılımcıları: Egemen Azay, Doğukan Taha Tıraş, Ege Gürel, Elifsu Genç
+
+
+<strong>Sprint Retrospective:<strong/>
+
+- Sprint sırasında animasyonlardaki görev ağırlığını hafifletmek için kedi animasyonları başka birisine verildi: Egemen
+- Kodlama kısmında sonraki sprint online sistemlere girileceği için bu sprint oynanış elementlerinin çoğu tamamlandı
 
 ---
 
