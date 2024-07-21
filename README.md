@@ -76,6 +76,8 @@ Cat Keeper bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir gün 
 <img width="798" alt="ev-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/Ev%20ss.png">
 <img width="1919" alt="kedi-animasyon-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/kedianimasyonss.png">
 <img width="1918" alt="powerup-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/powerupss.png">
+<img width="1917" alt="powerup-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/evGorlsel1.png">
+<img width="1919" alt="powerup-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/evGorsel2.png">
 
 <strong>Sprint Review:<strong/>
   
