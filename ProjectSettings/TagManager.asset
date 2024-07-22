@@ -8,10 +8,6 @@ TagManager:
   - Table
   - timeBuffer
   - Cat
-  - invisibilityBuffer
-  - fastBuffer
-  - jumpBuffer
-  - Furniture
   layers:
   - Default
   - TransparentFX

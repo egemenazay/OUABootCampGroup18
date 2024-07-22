@@ -3,7 +3,7 @@ using UnityEngine;
 namespace Cinemachine.Examples
 {
 
-    [AddComponentMenu("")] 
+    [AddComponentMenu("")]
     public class CharacterMovement : MonoBehaviour
     {
         public bool useCharacterForward = false;
@@ -12,7 +12,7 @@ namespace Cinemachine.Examples
         public KeyCode sprintJoystick = KeyCode.JoystickButton2;
         public KeyCode sprintKeyboard = KeyCode.Space;
 
-        public float maxStamina = 100f;
+        public float maxStamina = 30f;
         public float currentStamina;
         public float staminaDrainRate = 10f;
         public float staminaRegenRate = 5f;
@@ -28,12 +28,12 @@ namespace Cinemachine.Examples
         private Camera mainCamera;
         private float velocity;
 
-        
+
         void Start()
         {
             anim = GetComponent<Animator>();
             mainCamera = Camera.main;
-            currentStamina = maxStamina; 
+            currentStamina = maxStamina;
         }
 
         void FixedUpdate()
@@ -108,10 +108,10 @@ namespace Cinemachine.Examples
                 var forward = mainCamera.transform.TransformDirection(Vector3.forward);
                 forward.y = 0;
 
-               
+
                 var right = mainCamera.transform.TransformDirection(Vector3.right);
 
-               
+
                 targetDirection = input.x * right + input.y * forward;
             }
             else
@@ -120,7 +120,7 @@ namespace Cinemachine.Examples
                 var forward = transform.TransformDirection(Vector3.forward);
                 forward.y = 0;
 
-             
+
                 var right = transform.TransformDirection(Vector3.right);
                 targetDirection = input.x * right + Mathf.Abs(input.y) * forward;
             }
