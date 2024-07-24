@@ -24,7 +24,7 @@ public class TestCatMove : MonoBehaviour
     void Start()
     {
         _avatar = GetComponent<Alteruna.Avatar>();
-        if (_avatar.IsMe)
+        if (!_avatar.IsMe)
         {
             return;
         }
@@ -35,7 +35,7 @@ public class TestCatMove : MonoBehaviour
 
     void Update()
     {
-        if (_avatar.IsMe)
+        if (!_avatar.IsMe)
         {
             return;
         }
