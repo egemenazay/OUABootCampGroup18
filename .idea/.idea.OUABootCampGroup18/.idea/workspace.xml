@@ -7,7 +7,7 @@
     <list default="true" id="a9f56074-2e1a-4aa3-9201-9067b05fad09" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OUABootCampGroup18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OUABootCampGroup18/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/TestCatMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IEgemen/Scripts/TestCatMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene-Egemen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene-Egemen.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OnlineEvTestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OnlineEvTestScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +53,14 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../UnityBuilds/CatvshumanOnlineTestBuild/OUABootCamp.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\UnityBuilds\CatvshumanOnlineTestBuild" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.18f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\Git\OUABootCampGroup18 -debugCodeOptimization" />
@@ -103,6 +111,8 @@
       <workItem from="1721677533846" duration="29000" />
       <workItem from="1721749174739" duration="5000" />
       <workItem from="1721750701120" duration="6933000" />
+      <workItem from="1721844786719" duration="106000" />
+      <workItem from="1721845069170" duration="538000" />
     </task>
     <servers />
   </component>
