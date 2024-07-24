@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9f56074-2e1a-4aa3-9201-9067b05fad09" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OUABootCampGroup18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OUABootCampGroup18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/TestCatMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IEgemen/Scripts/TestCatMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene-Egemen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene-Egemen.unity" afterDir="false" />
-    </list>
+    <list default="true" id="a9f56074-2e1a-4aa3-9201-9067b05fad09" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
