@@ -41,15 +41,21 @@ public class TestCatMove : MonoBehaviour
         {
             animator.SetBool("isMoving", true);
         }
-        else if (curSpeedX != 0 && isRunning)
+        else
+        {
+            
+            animator.SetBool("isMoving", false);
+        }
+        
+        if (curSpeedX != 0 && isRunning)
         {
             animator.SetBool("isRuning", true);
         }
         else
         {
             animator.SetBool("isRuning", false);
-            animator.SetBool("isMoving", false);
         }
+        
         if (Input.GetButton("Jump") && canMove && characterController.isGrounded)
         {
             moveDirection.y = jumpPower;
