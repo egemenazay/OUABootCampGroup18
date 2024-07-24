@@ -62,15 +62,20 @@ public class PickUpController : MonoBehaviour
 
             Debug.Log("Nesne alýndý: " + pickableObject.name);
 
-            // Eðer nesne bir kedi ise, BoxCollider'ýnýn isTrigger'ýný true yap
-            if (pickableObject.CompareTag("Cat"))
+            // Eðer nesne bir kedi veya "Pickable" ise, BoxCollider'ýnýn isTrigger'ýný true yap
+            if (pickableObject.CompareTag("Cat") || pickableObject.CompareTag("Pickable"))
             {
-                BoxCollider catCollider = pickableObject.GetComponent<BoxCollider>();
-                if (catCollider != null)
+                BoxCollider objectCollider = pickableObject.GetComponent<BoxCollider>();
+                if (objectCollider != null)
                 {
-                    catCollider.isTrigger = true;
+                    objectCollider.isTrigger = true;
                 }
-                Invoke("DropObject", 5f);
+
+                // Eðer nesne bir kedi ise, 5 saniye sonra býrak
+                if (pickableObject.CompareTag("Cat"))
+                {
+                    Invoke("DropObject", 5f);
+                }
             }
 
             // Nesne tutulurken Rigidbody'yi devre dýþý býrak
@@ -91,13 +96,13 @@ public class PickUpController : MonoBehaviour
             // Nesneyi oyuncunun elinden býrak
             pickableObject.transform.SetParent(null);
 
-            // Eðer nesne bir kedi ise, BoxCollider'ýnýn isTrigger'ýný false yap
-            if (pickableObject.CompareTag("Cat"))
+            // Eðer nesne bir kedi veya "Pickable" ise, BoxCollider'ýnýn isTrigger'ýný false yap
+            if (pickableObject.CompareTag("Cat") || pickableObject.CompareTag("Pickable"))
             {
-                BoxCollider catCollider = pickableObject.GetComponent<BoxCollider>();
-                if (catCollider != null)
+                BoxCollider objectCollider = pickableObject.GetComponent<BoxCollider>();
+                if (objectCollider != null)
                 {
-                    catCollider.isTrigger = false;
+                    objectCollider.isTrigger = false;
                 }
 
                 // targetPosition'a olan mesafeyi kontrol et
@@ -105,18 +110,18 @@ public class PickUpController : MonoBehaviour
                 {
                     pickableObject.transform.position = targetPosition.transform.position;
                     pickableObject.transform.rotation = Quaternion.Euler(0, 0, 0);
-                    Debug.Log("Kedi targetPosition'a yerleþtirildi: " + pickableObject.name);
+                    Debug.Log("Nesne targetPosition'a yerleþtirildi: " + pickableObject.name);
                 }
                 else
                 {
-                    // Kediyi zemine yerleþtir
+                    // Nesneyi zemine yerleþtir
                     RaycastHit hit;
                     if (Physics.Raycast(pickableObject.transform.position, Vector3.down, out hit))
                     {
                         float groundDistance = hit.distance;
                         if (groundDistance > 0.5f)
                         {
-                            // Kediyi zemine taþý
+                            // Nesneyi zemine taþý
                             pickableObject.transform.position = new Vector3(pickableObject.transform.position.x, pickableObject.transform.position.y - groundDistance + 0.5f, pickableObject.transform.position.z);
                         }
                     }
