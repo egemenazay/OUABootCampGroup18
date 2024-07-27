@@ -5,121 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9f56074-2e1a-4aa3-9201-9067b05fad09" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OUABootCampGroup18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OUABootCampGroup18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Alteruna Multiplayer Setup.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Alteruna Multiplayer Setup.pdf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Media.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Media/Alteruna Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Media/Alteruna Logo.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Plugins.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Plugins/Alteruna.Trinity.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Plugins/Alteruna.Trinity.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Plugins/Alteruna.Trinity.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Plugins/Alteruna.Trinity.xml.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Plugins/Alteruna.TrinityEditor.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Plugins/Alteruna.TrinityEditor.dll.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Editor/BaseRoomBrowserEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Editor/BaseRoomBrowserEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Editor/MapInfoDrawer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Editor/MapInfoDrawer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Lock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Lock.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Room Browser Example.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Room Browser Example.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Room Browser.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Room Browser.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/RoomBrowser_Back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/RoomBrowser_Back.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/RoomBrowser_Lock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/RoomBrowser_Lock.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/RoomBrowser_Refresh.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/RoomBrowser_Refresh.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/BaseRoomBrowser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/BaseRoomBrowser.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/CreateRoomMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/CreateRoomMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/CustomRoomInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/CustomRoomInfo.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/MapDescriptions.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/MapDescriptions.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/PasswordPopup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/PasswordPopup.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/RoomBrowser.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/RoomBrowser.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/RoomBrowserRow.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/RoomBrowserRow.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/RoomBrowserSortButton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/RoomBrowserSortButton.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/StatusPopup.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomBrowser/Scripts/StatusPopup.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomMenu.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomMenu/Room Menu.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomMenu/Room Menu.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomMenu/RoomMenu.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/RoomMenu/RoomMenu.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/Text Chat.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/Text Chat.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandCreateRoom.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandCreateRoom.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandJoinRoom.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandJoinRoom.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandLeaveRoom.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandLeaveRoom.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandLoadScene.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandLoadScene.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandMe.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandMe.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandMove.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandMove.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandPrint.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandPrint.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandRoom.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandRoom.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandRotate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandRotate.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandScale.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandScale.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandSync.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandSync.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandTarget.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandTarget.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandTp.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandTp.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandUid.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/CommandUid.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/ITextChatCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatCommands/ITextChatCommand.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatSynchronizable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Prefabs/TextChat/TextChatSynchronizable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Resources.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Scripts/EnsureEventSystem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Scripts/EnsureEventSystem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Scripts/Examples.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Scripts/Examples/ExampleAttributeRpc.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Scripts/Examples/ExampleAttributeRpc.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Scripts/Examples/ExampleRpcProcedureParameters.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Scripts/Examples/ExampleRpcProcedureParameters.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Scripts/Examples/ExampleRpcSerializable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Scripts/Examples/ExampleRpcSerializable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Scripts/Examples/ExampleSynchronizable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Alteruna/Scripts/Examples/ExampleSynchronizable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/TestCatMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IEgemen/Scripts/TestCatMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player Cat.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player Cat.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene-Egemen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestScene-Egemen.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/HUD.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/HUD.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/ObjectGrabable.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/ObjectGrabable.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/ObjectPut.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/ObjectPut.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/PlayerPickUpDrop.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/PlayerPickUpDrop.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/TempScripts/TempPlayerController.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,6 +127,7 @@
       <workItem from="1722077265281" duration="890000" />
       <workItem from="1722078883316" duration="897000" />
       <workItem from="1722080140533" duration="268000" />
+      <workItem from="1722121034238" duration="6000" />
     </task>
     <servers />
   </component>
