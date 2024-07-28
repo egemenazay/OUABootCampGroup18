@@ -8,6 +8,9 @@ TagManager:
   - Table
   - timeBuffer
   - Cat
+  - Merdiven
+  - PickableKonum
+  - mug
   layers:
   - Default
   - TransparentFX
