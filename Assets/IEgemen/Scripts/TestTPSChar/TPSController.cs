@@ -17,17 +17,14 @@ public class TPSController : NetworkBehaviour
     {
         if (!isOwned)
         {
-            return;
+            this.enabled = false;
+            _camera.enabled = false;
         }
         controller = GetComponent<CharacterController>();
     }
 
     void Update()
     {
-        if (isOwned)
-        {
-            return;
-        }
         if (controller.isGrounded)
         {
             // Karakter yere basıyorsa hareket et
