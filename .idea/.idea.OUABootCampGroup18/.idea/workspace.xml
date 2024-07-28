@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9f56074-2e1a-4aa3-9201-9067b05fad09" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/HUD.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/HUD.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/ObjectGrabable.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/ObjectGrabable.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/ObjectPut.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/ObjectPut.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/PlayerPickUpDrop.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/PlayerPickUpDrop.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/TempScripts/TempPlayerController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OUABootCampGroup18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OUABootCampGroup18/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Prefabs/TestPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IEgemen/Prefabs/TestPlayer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HumanPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HumanPlayer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player Cat Mirror.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player Cat Mirror.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/testPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/testPlayer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/testPlayer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/testPlayer.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OnlineMirror.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OnlineMirror.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene-Egemen.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene-Egemen.unity.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +24,11 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/IEgemen/Scripts/CharSelection/CharacterSelection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/IEgemen/Scripts/TestCatMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/IEgemen/Scripts/TestCatMoveOnline.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/IEgemen/Scripts/TestTPSChar/TPSCamController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/IEgemen/Scripts/TestTPSChar/TPSController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -128,6 +129,7 @@
       <workItem from="1722078883316" duration="897000" />
       <workItem from="1722080140533" duration="268000" />
       <workItem from="1722121034238" duration="6000" />
+      <workItem from="1722121097490" duration="3162000" />
     </task>
     <servers />
   </component>
