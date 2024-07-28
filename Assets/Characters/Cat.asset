@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Cat
   m_EditorClassIdentifier: 
   characterName: Cat
-  characterPreviewPrefab: {fileID: 9074078268780928093, guid: 23e760957d6eaa840b9de2ea057b21a1, type: 3}
+  characterPreviewPrefab: {fileID: 919132149155446097, guid: a11358a8ff7210542896c61e22e723fa, type: 3}
   gameplayCharacterPrefab: {fileID: 9074078268780928093, guid: 23e760957d6eaa840b9de2ea057b21a1, type: 3}

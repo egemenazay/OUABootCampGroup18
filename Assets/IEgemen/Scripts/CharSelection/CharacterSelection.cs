@@ -36,8 +36,27 @@ using TMPro;
 
             characterSelectDisplay.SetActive(true);
         }
+        
+        private void Update()
+        {
+            characterPreviewParent.RotateAround(
+                characterPreviewParent.position,
+                characterPreviewParent.up,
+                turnSpeed * Time.deltaTime);
+        }
 
+        public void Select()
+        {
+            CmdSelect(currentCharacterIndex);
+            characterSelectDisplay.SetActive(false);
+        }
 
+        [Command(requiresAuthority = false)]
+        public void CmdSelect(int characterIndex, NetworkConnectionToClient sender = null)
+        {
+            GameObject characterInstance = Instantiate(characters[characterIndex].GameplayCharacterPrefab);
+            NetworkServer.Spawn(characterInstance, sender);
+        }
         public void Right()
         {
             characterInstances[currentCharacterIndex].SetActive(false);

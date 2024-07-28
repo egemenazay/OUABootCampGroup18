@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Keeper
   m_EditorClassIdentifier: 
   characterName: Keeper
-  characterPreviewPrefab: {fileID: 2894077221591900314, guid: 61291f15c41fbf44da1187c031270760, type: 3}
+  characterPreviewPrefab: {fileID: 2894077221591900314, guid: 9e979a2c691ffc84ab522993bc727b5c, type: 3}
   gameplayCharacterPrefab: {fileID: 2894077221591900314, guid: 61291f15c41fbf44da1187c031270760, type: 3}

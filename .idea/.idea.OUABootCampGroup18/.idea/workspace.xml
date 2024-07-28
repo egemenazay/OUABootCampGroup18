@@ -6,14 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a9f56074-2e1a-4aa3-9201-9067b05fad09" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OUABootCampGroup18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OUABootCampGroup18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Prefabs/TestPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IEgemen/Prefabs/TestPlayer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HumanPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HumanPlayer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player Cat Mirror.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player Cat Mirror.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/testPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/testPlayer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/testPlayer.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/testPlayer.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OnlineMirror.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OnlineMirror.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene-Egemen.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestScene-Egemen.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/3P Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3P Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Characters/Cat.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Characters/Cat.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Characters/Keeper.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Characters/Keeper.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/CharSelection/CharacterSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IEgemen/Scripts/CharSelection/CharacterSelection.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +125,7 @@
       <workItem from="1722078883316" duration="897000" />
       <workItem from="1722080140533" duration="268000" />
       <workItem from="1722121034238" duration="6000" />
-      <workItem from="1722121097490" duration="3162000" />
+      <workItem from="1722121097490" duration="4174000" />
     </task>
     <servers />
   </component>

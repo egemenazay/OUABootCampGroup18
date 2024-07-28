@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Mirror;
 using UnityEngine;
 
-public class TPSController : MonoBehaviour
+public class TPSController : NetworkBehaviour
 {
     
     public float speed = 5.0f;
@@ -14,6 +15,11 @@ public class TPSController : MonoBehaviour
     [SerializeField] private Camera _camera;
     void Start()
     {
+        if (!isLocalPlayer)
+        {
+            this.enabled = false;
+            _camera.enabled = false;
+        }
         controller = GetComponent<CharacterController>();
     }
 
