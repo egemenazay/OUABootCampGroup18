@@ -20,10 +20,8 @@ public class TestCatMove : MonoBehaviour
     
     private bool canMove = true;
 
-   
     void Start()
     {
-       
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -31,7 +29,6 @@ public class TestCatMove : MonoBehaviour
 
     void Update()
     {
-        
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 
