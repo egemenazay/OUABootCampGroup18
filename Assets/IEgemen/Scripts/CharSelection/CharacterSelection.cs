@@ -12,6 +12,7 @@ using TMPro;
         [SerializeField] private TMP_Text characterNameText = default;
         [SerializeField] private float turnSpeed = 90f;
         [SerializeField] private Character[] characters = default;
+        [SerializeField] private Transform spawnLocation;
 
         private int currentCharacterIndex = 0;
         private List<GameObject> characterInstances = new List<GameObject>();
@@ -54,7 +55,7 @@ using TMPro;
         [Command(requiresAuthority = false)]
         public void CmdSelect(int characterIndex, NetworkConnectionToClient sender = null)
         {
-            GameObject characterInstance = Instantiate(characters[characterIndex].GameplayCharacterPrefab);
+            GameObject characterInstance = Instantiate(characters[characterIndex].GameplayCharacterPrefab, spawnLocation);
             NetworkServer.Spawn(characterInstance, sender);
         }
         public void Right()

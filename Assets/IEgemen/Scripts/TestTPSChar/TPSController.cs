@@ -15,16 +15,19 @@ public class TPSController : NetworkBehaviour
     [SerializeField] private Camera _camera;
     void Start()
     {
-        if (!isLocalPlayer)
+        if (!isOwned)
         {
-            this.enabled = false;
-            _camera.enabled = false;
+            return;
         }
         controller = GetComponent<CharacterController>();
     }
 
     void Update()
     {
+        if (isOwned)
+        {
+            return;
+        }
         if (controller.isGrounded)
         {
             // Karakter yere basıyorsa hareket et

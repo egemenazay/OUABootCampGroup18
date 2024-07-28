@@ -23,18 +23,21 @@ public class TestCatMoveOnline : NetworkBehaviour
 
     void Start()
     {
-        if (!isLocalPlayer)
+        if (!isOwned)
         {
             this.enabled = false;
             playerCamera.enabled = false;
         }
         characterController = GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
-
+    [ClientCallback]
     void Update()
     {
+        if (!isOwned)
+        {
+            this.enabled = false;
+            playerCamera.enabled = false;
+        }
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 

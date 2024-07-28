@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Mirror;
 using UnityEngine;
 
-public class TPSCamController : MonoBehaviour
+public class TPSCamController : NetworkBehaviour
 {
     public Transform target;
     public float distance = 5.0f;
