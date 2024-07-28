@@ -43,8 +43,8 @@ public class PickUpController : MonoBehaviour
                 // Tüm collider'lar üzerinde dolaþ
                 foreach (Collider collider in colliders)
                 {
-                    // Collider'ýn "Pickable" veya "Cat" tag'ine sahip olup olmadýðýný kontrol et
-                    if (collider.CompareTag("Pickable") || collider.CompareTag("Cat"))
+                    // Collider'ýn "Pickable", "Cat" veya "mug" tag'ine sahip olup olmadýðýný kontrol et
+                    if (collider.CompareTag("Pickable") || collider.CompareTag("Cat") || collider.CompareTag("mug"))
                     {
                         pickableObject = collider.gameObject;
                         initialPositionObject = GameObject.Find(pickableObject.tag + "Konum"); // Ýlk konumu saklayan objeyi bul
@@ -86,7 +86,7 @@ public class PickUpController : MonoBehaviour
 
             Debug.Log("Nesne alýndý: " + pickableObject.name);
 
-            // Eðer nesne bir kedi veya "Pickable" ise, BoxCollider'ýnýn isTrigger'ýný true yap
+            // Eðer nesne bir kedi, "Pickable" veya "mug" ise, BoxCollider'ýnýn isTrigger'ýný true yap
             if (pickableObject.CompareTag("Cat") || pickableObject.CompareTag("Pickable") || pickableObject.CompareTag("mug"))
             {
                 BoxCollider objectCollider = pickableObject.GetComponent<BoxCollider>();
@@ -109,10 +109,12 @@ public class PickUpController : MonoBehaviour
                 rb.isKinematic = true;
             }
 
-            // Marker script'ine initialPosition'ý ayarla
+            // Marker script'ine initialPosition'ý ve target'ý ayarla ve marker'ý görünür yap
             if (marker != null)
             {
                 marker.initialPosition = initialPositionObject?.transform;
+                marker.target = initialPositionObject?.transform;
+                marker.img.gameObject.SetActive(true); // Marker'ý görünür yap
                 Debug.Log("Marker initialPosition set to: " + marker.initialPosition?.name);
             }
         }
@@ -127,7 +129,7 @@ public class PickUpController : MonoBehaviour
             // Nesneyi oyuncunun elinden býrak
             pickableObject.transform.SetParent(null);
 
-            // Eðer nesne bir kedi veya "Pickable" ise, BoxCollider'ýnýn isTrigger'ýný false yap
+            // Eðer nesne bir kedi, "Pickable" veya "mug" ise, BoxCollider'ýnýn isTrigger'ýný false yap
             if (pickableObject.CompareTag("Cat") || pickableObject.CompareTag("Pickable") || pickableObject.CompareTag("mug"))
             {
                 BoxCollider objectCollider = pickableObject.GetComponent<BoxCollider>();
@@ -136,12 +138,12 @@ public class PickUpController : MonoBehaviour
                     objectCollider.isTrigger = false;
                 }
 
-                // targetPosition'a olan mesafeyi kontrol et
-                if (targetPosition != null && Vector3.Distance(pickableObject.transform.position, targetPosition.transform.position) <= placeRange)
+                // initialPositionObject'e olan mesafeyi kontrol et
+                if (initialPositionObject != null && Vector3.Distance(pickableObject.transform.position, initialPositionObject.transform.position) <= placeRange)
                 {
-                    pickableObject.transform.position = targetPosition.transform.position;
-                    pickableObject.transform.rotation = Quaternion.Euler(0, 0, 0);
-                    Debug.Log("Nesne targetPosition'a yerleþtirildi: " + pickableObject.name);
+                    pickableObject.transform.position = initialPositionObject.transform.position;
+                    pickableObject.transform.rotation = initialPositionObject.transform.rotation;
+                    Debug.Log("Nesne initialPositionObject'e yerleþtirildi: " + pickableObject.name);
                 }
                 else
                 {
@@ -169,6 +171,13 @@ public class PickUpController : MonoBehaviour
             Debug.Log("Nesne býrakýldý: " + pickableObject.name);
             pickableObject = null;  // Býrakýlan nesneye olan referansý temizle
             initialPositionObject = null; // Ýlk konum referansýný temizle
+
+            // Marker'ý gizle
+            if (marker != null)
+            {
+                marker.img.gameObject.SetActive(false);
+                marker.target = null;
+            }
         }
     }
 }
