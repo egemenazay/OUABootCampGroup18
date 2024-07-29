@@ -8,7 +8,7 @@ public class ObjectFallDetector : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // Eðer düþen obje "Furniture" etiketi taþýyorsa
-        if (other.CompareTag("Furniture"))
+        if (other.CompareTag("Furniture")|| other.CompareTag("Cat"))
         {
             ItemFallTracker fallTracker = other.GetComponent<ItemFallTracker>();
             if (fallTracker != null && !fallTracker.hasFallen)
