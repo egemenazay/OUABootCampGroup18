@@ -6,18 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a9f56074-2e1a-4aa3-9201-9067b05fad09" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OUABootCampGroup18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OUABootCampGroup18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3P Assets/Samples/Cinemachine/2.9.7/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Controllers/CharacterController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3P Assets/Samples/Cinemachine/2.9.7/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Controllers/CharacterController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3P Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3P Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3P Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3P Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3P Assets/UI/uipack_rpg_sheet.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3P Assets/UI/uipack_rpg_sheet.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dogukan/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dogukan/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/CharSelection/CharacterSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IEgemen/Scripts/CharSelection/CharacterSelection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/TestCatMoveOnline.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IEgemen/Scripts/TestCatMoveOnline.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Prefabs/TestPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IEgemen/Prefabs/TestPlayer.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/TestTPSChar/TPSCamController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IEgemen/Scripts/TestTPSChar/TPSCamController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player Cat Mirror.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player Cat Mirror.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OnlineMirror.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OnlineMirror.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/TestTPSChar/TPSController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IEgemen/Scripts/TestTPSChar/TPSController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/HumanPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/HumanPlayer.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +24,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/IEgemen/Scripts/LobbyScripts/MyNetworkRoomPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/IEgemen/Scripts/TestCatMove.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/IEgemen/Scripts/TestCatMoveOnline.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/IEgemen/Scripts/TestTPSChar/FPSCharController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/IEgemen/Scripts/TestTPSChar/TPSCamController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/IEgemen/Scripts/TestTPSChar/TPSController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ObjectDetectorPut.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -143,6 +137,11 @@
       <workItem from="1722266977052" duration="1120000" />
       <workItem from="1722268174938" duration="1355000" />
       <workItem from="1722272576100" duration="4052000" />
+      <workItem from="1722285899942" duration="18000" />
+      <workItem from="1722285928293" duration="401000" />
+      <workItem from="1722286430514" duration="50000" />
+      <workItem from="1722286525194" duration="311000" />
+      <workItem from="1722286874385" duration="953000" />
     </task>
     <servers />
   </component>
