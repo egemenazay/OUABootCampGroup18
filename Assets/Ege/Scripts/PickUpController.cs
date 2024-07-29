@@ -6,8 +6,8 @@ public class PickUpController : MonoBehaviour
 {
     public GameObject holdPosition;
     public GameObject targetPosition; // Boþ GameObject referansý
-    public float pickUpRange = 2f;  // Bu mesafeyi gerektiði gibi ayarlayýn
-    public float placeRange = 2f;   // Yerleþtirme mesafesi
+    public float pickUpRange = 20f;  // Bu mesafeyi gerektiði gibi ayarlayýn
+    public float placeRange = 5f;   // Yerleþtirme mesafesi
     private GameObject pickableObject;
     private GameObject initialPositionObject; // Nesnenin ilk konumunu saklayan boþ obje
     private Collider[] colliders;
