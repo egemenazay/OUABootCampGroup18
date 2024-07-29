@@ -22,8 +22,6 @@ public class TPSCamController : NetworkBehaviour
         y = angles.x;
 
         // Lock the cursor
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
 
     void LateUpdate()
