@@ -46,7 +46,7 @@ public class TestCatMoveOnline : NetworkBehaviour
         float curSpeedY = canMove ? (isRunning ? runSpeed : walkSpeed) * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
-        if (curSpeedX != 0)
+        if (curSpeedX != 0 || curSpeedY != 0)
         {
             animator.SetBool("isMoving", true);
         }
