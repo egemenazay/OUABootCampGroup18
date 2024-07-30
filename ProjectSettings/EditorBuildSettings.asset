@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/IEgemen/Scenes/Lobby.unity
+    guid: 9f8915f1ca4460c488c0f56aae9267db
+  - enabled: 1
+    path: Assets/IEgemen/Scenes/OnlineMirror.unity
+    guid: 759eadc835551e84280aae5fd5edfbd5
   m_configObjects: {}
