@@ -97,10 +97,7 @@ using TMPro;
             characterInstances[currentCharacterIndex].SetActive(true);
             characterNameText.text = characters[currentCharacterIndex].CharacterName;
         }
-
-        public void ShowError()
-        {
-            
-        }
+        
+        
     }
 
