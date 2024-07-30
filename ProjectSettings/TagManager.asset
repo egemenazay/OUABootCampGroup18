@@ -11,6 +11,8 @@ TagManager:
   - Merdiven
   - PickableKonum
   - mug
+  - Item
+  - placement
   layers:
   - Default
   - TransparentFX
@@ -21,7 +23,7 @@ TagManager:
   - Ground
   - DropLayer
   - Wall
-  - 
+  - Objects
   - 
   - 
   - 

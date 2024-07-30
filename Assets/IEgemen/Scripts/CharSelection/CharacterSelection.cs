@@ -12,11 +12,15 @@ using TMPro;
         [SerializeField] private TMP_Text characterNameText = default;
         [SerializeField] private float turnSpeed = 90f;
         [SerializeField] private Character[] characters = default;
-        [SerializeField] private Transform spawnLocation;
+        [SerializeField] private Transform spawnLocationCat;
+        [SerializeField] private Transform spawnLocationKeeper;
+        private Transform spawnLocation;
+        
 
         private int currentCharacterIndex = 0;
         private List<GameObject> characterInstances = new List<GameObject>();
 
+        private static bool[] characterSelected;
         public override void OnStartClient()
         {
             if (characterPreviewParent.childCount == 0)
@@ -27,9 +31,12 @@ using TMPro;
                         Instantiate(character.CharacterPreviewPrefab, characterPreviewParent);
 
                     characterInstance.SetActive(false);
-
                     characterInstances.Add(characterInstance);
                 }
+            }
+            if (characterSelected == null)
+            {
+                characterSelected = new bool[characters.Length];
             }
 
             characterInstances[currentCharacterIndex].SetActive(true);
@@ -44,6 +51,7 @@ using TMPro;
                 characterPreviewParent.position,
                 characterPreviewParent.up,
                 turnSpeed * Time.deltaTime);
+            Debug.Log(currentCharacterIndex);
         }
 
         public void Select()
@@ -55,7 +63,15 @@ using TMPro;
         [Command(requiresAuthority = false)]
         public void CmdSelect(int characterIndex, NetworkConnectionToClient sender = null)
         {
-            GameObject characterInstance = Instantiate(characters[characterIndex].GameplayCharacterPrefab, spawnLocation);
+            if (characterIndex == 0)
+            {
+                spawnLocation = spawnLocationCat;
+            }
+            else if (characterIndex == 1)
+            {
+                spawnLocation = spawnLocationKeeper;
+            }
+            GameObject characterInstance = Instantiate(characters[characterIndex].GameplayCharacterPrefab, spawnLocation.position , transform.rotation);
             NetworkServer.Spawn(characterInstance, sender);
         }
         public void Right()
@@ -81,5 +97,7 @@ using TMPro;
             characterInstances[currentCharacterIndex].SetActive(true);
             characterNameText.text = characters[currentCharacterIndex].CharacterName;
         }
+        
+        
     }
 

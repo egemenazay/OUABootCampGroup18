@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
 
-public class TPSCamController : NetworkBehaviour
+public class TPSCamController : MonoBehaviour
 {
     public Transform target;
     public float distance = 5.0f;
@@ -22,8 +22,6 @@ public class TPSCamController : NetworkBehaviour
         y = angles.x;
 
         // Lock the cursor
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
 
     void LateUpdate()
