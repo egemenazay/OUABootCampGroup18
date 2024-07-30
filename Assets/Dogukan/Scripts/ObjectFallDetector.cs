@@ -7,14 +7,17 @@ public class ObjectFallDetector : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        // Eðer düþen obje "Furniture" etiketi taþýyorsa
         if (other.CompareTag("Cat"))
         {
             ItemFallTracker fallTracker = other.GetComponent<ItemFallTracker>();
-            if (fallTracker != null && !fallTracker.hasFallen)
+            if (fallTracker != null)
             {
-                messBarController.IncreaseMessBar(messAmount);
-                fallTracker.hasFallen = true; // Eþyanýn yere düþtüðünü iþaretle
+                if (!fallTracker.hasFallen)
+                {
+                    messBarController.IncreaseMessBar(messAmount);
+                    fallTracker.hasFallen = true; // Eþyanýn yere düþtüðünü iþaretle
+                    fallTracker.isPlaced = false; // Eþyanýn yerleþtirildiðini resetle
+                }
             }
         }
     }

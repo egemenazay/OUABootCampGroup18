@@ -1,40 +1,33 @@
-using Cinemachine.Examples;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class staminaBar : MonoBehaviour
+public class StaminaBar : MonoBehaviour
 {
-    public float maxStamina = 30f;
-    public float currentStamina;
     public Slider sliderStamina;
 
-    private CharacterMovement characterMovement;
+    private FPSCharController characterController;
 
     void Start()
     {
-        characterMovement = FindObjectOfType<CharacterMovement>();
-        if (characterMovement != null)
+        characterController = FindObjectOfType<FPSCharController>();
+        if (characterController != null)
         {
-            maxStamina = characterMovement.maxStamina;
-            currentStamina = characterMovement.currentStamina;
+            sliderStamina.maxValue = characterController.maxStamina;
+            sliderStamina.value = characterController.currentStamina;
         }
         else
         {
-            Debug.LogWarning("CharacterMovement script not found in the scene.");
+            Debug.LogWarning("FPSCharController script not found in the scene.");
         }
-
-        sliderStamina.maxValue = maxStamina;
-        sliderStamina.value = currentStamina;
     }
 
     void Update()
     {
-        if (characterMovement != null)
+        if (characterController != null)
         {
-            currentStamina = characterMovement.currentStamina;
-            sliderStamina.value = currentStamina;
+            sliderStamina.value = characterController.currentStamina;
         }
     }
 }

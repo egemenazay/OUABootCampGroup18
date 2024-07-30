@@ -14,12 +14,28 @@ public class Marker : MonoBehaviour
 
     void Start()
     {
+        if (img == null)
+        {
+            Debug.LogError("Marker: img referansý atanmamýþ.");
+            return;
+        }
+        if (meter == null)
+        {
+            Debug.LogError("Marker: meter referansý atanmamýþ.");
+            return;
+        }
+
         img.gameObject.SetActive(false); // Baþlangýçta marker'ý gizle
     }
 
     void Update()
     {
-        if (initialPosition != null && target != null && img.gameObject.activeSelf)
+        if (img == null || target == null || initialPosition == null)
+        {
+            return; // img, target veya initialPosition atanmadýysa iþlemleri yapma
+        }
+
+        if (img.gameObject.activeSelf)
         {
             float minX = img.GetPixelAdjustedRect().width / 2;
             float maxX = Screen.width - minX;
@@ -41,7 +57,23 @@ public class Marker : MonoBehaviour
             pos.x = Mathf.Clamp(pos.x, minX, maxX);
             pos.y = Mathf.Clamp(pos.y, minY, maxY);
             img.transform.position = pos;
-            meter.text = ((int)Vector3.Distance(initialPosition.position, transform.position) - 9).ToString() + "m";
+            meter.text = ((int)Vector3.Distance(initialPosition.position, target.position)).ToString() + "m"; // initialPosition'dan target'a olan mesafeyi hesapla
         }
+    }
+
+    public void SetTarget(Transform newTarget, Transform initialPos)
+    {
+        target = newTarget;
+        initialPosition = initialPos;
+        if (img != null)
+        {
+            img.gameObject.SetActive(true); // Marker'ý görünür yap
+        }
+    }
+
+    public void ClearTarget()
+    {
+        target = null;
+        initialPosition = null;
     }
 }

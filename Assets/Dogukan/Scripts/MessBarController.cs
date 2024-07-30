@@ -14,4 +14,14 @@ public class MessBarController : MonoBehaviour
             messBar.value = messBar.maxValue;
         }
     }
+
+    // Daðýnýklýk barýný azaltmak için çaðýrýlacak metot
+    public void DecreaseMessBar(float amount)
+    {
+        messBar.value -= amount;
+        if (messBar.value < messBar.minValue)
+        {
+            messBar.value = messBar.minValue;
+        }
+    }
 }

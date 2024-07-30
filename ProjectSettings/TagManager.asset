@@ -12,6 +12,7 @@ TagManager:
   - PickableKonum
   - mug
   - Item
+  - placement
   layers:
   - Default
   - TransparentFX
