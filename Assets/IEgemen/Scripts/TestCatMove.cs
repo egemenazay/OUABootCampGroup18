@@ -20,14 +20,8 @@ public class TestCatMove : MonoBehaviour
     
     private bool canMove = true;
 
-    private Alteruna.Avatar _avatar;
     void Start()
     {
-        _avatar = GetComponent<Alteruna.Avatar>();
-        if (!_avatar.IsMe)
-        {
-            return;
-        }
         characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -35,10 +29,6 @@ public class TestCatMove : MonoBehaviour
 
     void Update()
     {
-        if (!_avatar.IsMe)
-        {
-            return;
-        }
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 

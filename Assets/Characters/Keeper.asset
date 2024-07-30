@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50701df7cd939a1458aaf16de1ed287d, type: 3}
+  m_Name: Keeper
+  m_EditorClassIdentifier: 
+  characterName: Keeper
+  characterPreviewPrefab: {fileID: 2894077221591900314, guid: 9e979a2c691ffc84ab522993bc727b5c, type: 3}
+  gameplayCharacterPrefab: {fileID: 2894077221591900314, guid: 61291f15c41fbf44da1187c031270760, type: 3}

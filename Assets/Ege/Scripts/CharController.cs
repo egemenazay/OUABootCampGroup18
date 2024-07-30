@@ -146,6 +146,7 @@ namespace Cinemachine.Examples
             if (Physics.Raycast(altRay.transform.position, transform.TransformDirection(Vector3.forward), out hitLower, 0.1f))
             {
                 Debug.Log("Alt ray çarptý: " + hitLower.collider.name);
+
                 if (hitLower.collider.CompareTag("Merdiven"))
                 {
                     RaycastHit hitUpper;
