@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Mirror;
 
 [RequireComponent(typeof(CharacterController))]
-public class FPSCharController : MonoBehaviour
+public class FPSCharController : NetworkBehaviour
 {
     public Camera playerCamera;
     public float walkSpeed = 6f;
@@ -20,11 +21,21 @@ public class FPSCharController : MonoBehaviour
 
     void Start()
     {
+        if (!isOwned)
+        {
+            this.enabled = false;
+            playerCamera.enabled = false;
+        }
         characterController = GetComponent<CharacterController>();
     }
 
     void Update()
     {
+        if (!isOwned)
+        {
+            this.enabled = false;
+            playerCamera.enabled = false;
+        }
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 

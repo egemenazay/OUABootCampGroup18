@@ -42,7 +42,7 @@ GameObject:
   m_Component:
   - component: {fileID: 196686134551391791}
   - component: {fileID: 5859899796351721656}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1431,6 +1431,7 @@ GameObject:
   - component: {fileID: -4859818878418868194}
   - component: {fileID: -8717708845861543793}
   - component: {fileID: 5186816651059225938}
+  - component: {fileID: -6624935899668108815}
   m_Layer: 0
   m_Name: Player Cat Mirror
   m_TagString: Untagged
@@ -1600,3 +1601,15 @@ MonoBehaviour:
   syncInterval: 0
   clientAuthority: 0
   animator: {fileID: 5859899796351721656}
+--- !u!114 &-6624935899668108815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9074078268780928093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b0cf628970986d4db035ac342952f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
