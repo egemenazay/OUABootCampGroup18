@@ -13,23 +13,22 @@ using Unity.Services.Relay.Models;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class RelayManager : MonoBehaviour
+public class RelayManager : NetworkBehaviour
 {
     [SerializeField] private TextMeshProUGUI joinCodeText;
     [SerializeField] private TMP_InputField joinCodeInputField;
     [SerializeField] private GameObject networkUI;
     [SerializeField] private GameObject gameUI;
-
     public async void StartRelay()
     {
         string joinCode = await StartHostingWithRelay();
         joinCodeText.text = joinCode;
         SwapUI(); 
-        
     }
     public async void JoinRelay()
     {
         await StartClientWithRelay(joinCodeInputField.text);
+        joinCodeText.text = joinCodeInputField.text;
         SwapUI();
     }
     private async void Start()
