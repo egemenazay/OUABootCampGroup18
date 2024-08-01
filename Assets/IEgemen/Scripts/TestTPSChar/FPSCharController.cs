@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
-using Mirror;
 
 [RequireComponent(typeof(CharacterController))]
 public class FPSCharController : NetworkBehaviour
@@ -18,24 +18,31 @@ public class FPSCharController : NetworkBehaviour
     private float rotationX = 0;
     private CharacterController characterController;
     private bool canMove = true;
+    
 
     void Start()
     {
-        if (!isOwned)
-        {
-            this.enabled = false;
-            playerCamera.enabled = false;
-        }
+        gameObject.transform.position = new Vector3(-18,3, 0);
         characterController = GetComponent<CharacterController>();
+        if (IsHost)
+        {
+            Debug.Log("HOSTUM");
+        }
+        else
+        {
+            Debug.Log("CLIENTIM");
+        }
     }
 
     void Update()
     {
-        if (!isOwned)
+        if (!IsOwner)
         {
-            this.enabled = false;
+            Debug.Log("OWNER DEĞİLİM");
             playerCamera.enabled = false;
+            return;
         }
+
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 

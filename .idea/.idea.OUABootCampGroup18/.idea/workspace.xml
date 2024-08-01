@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9f56074-2e1a-4aa3-9201-9067b05fad09" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OUABootCampGroup18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OUABootCampGroup18/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/3P Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3P Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Dogukan/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dogukan/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
@@ -14,6 +15,8 @@
       <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/TestTPSChar/FPSCharController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IEgemen/Scripts/TestTPSChar/FPSCharController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player Cat Mirror.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player Cat Mirror.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/elif/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/elif/Scenes/SampleScene.unity" afterDir="false" />
+=======
+>>>>>>> Stashed changes
       <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +53,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< Updated upstream
     "git-widget-placeholder": "online-test",
+=======
+    "git-widget-placeholder": "main",
+>>>>>>> Stashed changes
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -151,7 +158,11 @@
       <workItem from="1722352368229" duration="1245000" />
       <workItem from="1722358553407" duration="25000" />
       <workItem from="1722358597172" duration="5974000" />
+<<<<<<< Updated upstream
       <workItem from="1722367453730" duration="1656000" />
+=======
+      <workItem from="1722370826750" duration="15000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>

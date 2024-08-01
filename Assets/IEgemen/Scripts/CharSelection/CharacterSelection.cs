@@ -1,11 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Mirror;
 using TMPro;
 
 
-    public class CharacterSelect : NetworkBehaviour
+    public class CharacterSelect : MonoBehaviour
     {
         [SerializeField] private GameObject characterSelectDisplay = default;
         [SerializeField] private Transform characterPreviewParent = default;
@@ -21,7 +20,7 @@ using TMPro;
         private List<GameObject> characterInstances = new List<GameObject>();
 
         private static bool[] characterSelected;
-        public override void OnStartClient()
+        public  void Start()
         {
             if (characterPreviewParent.childCount == 0)
             {
@@ -51,29 +50,22 @@ using TMPro;
                 characterPreviewParent.position,
                 characterPreviewParent.up,
                 turnSpeed * Time.deltaTime);
-            Debug.Log(currentCharacterIndex);
         }
 
         public void Select()
         {
-            CmdSelect(currentCharacterIndex);
-            characterSelectDisplay.SetActive(false);
-        }
-
-        [Command(requiresAuthority = false)]
-        public void CmdSelect(int characterIndex, NetworkConnectionToClient sender = null)
-        {
-            if (characterIndex == 0)
+            if (currentCharacterIndex == 0)
             {
                 spawnLocation = spawnLocationCat;
             }
-            else if (characterIndex == 1)
+            else if (currentCharacterIndex == 1)
             {
                 spawnLocation = spawnLocationKeeper;
             }
-            GameObject characterInstance = Instantiate(characters[characterIndex].GameplayCharacterPrefab, spawnLocation.position , transform.rotation);
-            NetworkServer.Spawn(characterInstance, sender);
+            GameObject characterInstance = Instantiate(characters[currentCharacterIndex].GameplayCharacterPrefab, spawnLocation.position , transform.rotation);
+            characterSelectDisplay.SetActive(false);
         }
+
         public void Right()
         {
             characterInstances[currentCharacterIndex].SetActive(false);
@@ -97,7 +89,5 @@ using TMPro;
             characterInstances[currentCharacterIndex].SetActive(true);
             characterNameText.text = characters[currentCharacterIndex].CharacterName;
         }
-        
-        
     }
 
