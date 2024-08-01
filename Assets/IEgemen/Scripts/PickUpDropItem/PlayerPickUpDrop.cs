@@ -6,10 +6,10 @@ public class PlayerPickUpDrop : MonoBehaviour
     [SerializeField] private Transform playerCameraTransform;
     [SerializeField] private Transform objectGrabPointTransform;
     [SerializeField] private LayerMask pickUpLayerMask;
-    [SerializeField] private Marker marker;
-    [SerializeField] private Image crosshairImage; // Crosshair UI element
-    [SerializeField] private Color defaultCrosshairColor = Color.white;
-    [SerializeField] private Color interactableCrosshairColor = Color.green;
+    //[SerializeField] private Marker marker;
+    // [SerializeField] private Image crosshairImage; // Crosshair UI element
+    //[SerializeField] private Color defaultCrosshairColor = Color.white;
+    //[SerializeField] private Color interactableCrosshairColor = Color.green;
 
     private ObjectGrabbable objectGrabbable;
     private Transform initialPosition;
@@ -17,7 +17,7 @@ public class PlayerPickUpDrop : MonoBehaviour
 
     private void Update()
     {
-        UpdateCrosshair();
+        // UpdateCrosshair();
 
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -45,7 +45,7 @@ public class PlayerPickUpDrop : MonoBehaviour
         }
     }
 
-    private void UpdateCrosshair()
+    /*private void UpdateCrosshair()
     {
         float pickUpDistance = 10f;
         if (Physics.Raycast(playerCameraTransform.position, playerCameraTransform.forward, out RaycastHit raycastHit, pickUpDistance, pickUpLayerMask))
@@ -58,7 +58,7 @@ public class PlayerPickUpDrop : MonoBehaviour
             // No object in range
             crosshairImage.color = defaultCrosshairColor;
         }
-    }
+    }*/
 
     private void DetectPlacementTarget()
     {

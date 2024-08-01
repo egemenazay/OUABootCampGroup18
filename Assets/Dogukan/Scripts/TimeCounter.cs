@@ -4,7 +4,7 @@ using TMPro;
 public class TimeCounter : MonoBehaviour
 {
     public TextMeshProUGUI timerText;
-    private float timeRemaining = 180; // 3 dakika (180 saniye)
+    public float timeRemaining = 180; // 3 dakika (180 saniye)
 
     void Start()
     {
@@ -21,7 +21,7 @@ public class TimeCounter : MonoBehaviour
         else
         {
             timeRemaining = 0;
-            // Süre bittiðinde yapýlacak iþlemler
+            // Sï¿½re bittiï¿½inde yapï¿½lacak iï¿½lemler
         }
     }
 

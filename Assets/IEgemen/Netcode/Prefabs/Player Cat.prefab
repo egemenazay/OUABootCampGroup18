@@ -1445,6 +1445,7 @@ GameObject:
   - component: {fileID: 3181573056036851066}
   - component: {fileID: 5074001632099168538}
   - component: {fileID: 1418110034073989468}
+  - component: {fileID: 8696918936472169522}
   m_Layer: 0
   m_Name: Player Cat
   m_TagString: Untagged
@@ -1520,7 +1521,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 1
-  m_Constraints: 0
+  m_Constraints: 96
   m_CollisionDetection: 1
 --- !u!114 &3181573056036851066
 MonoBehaviour:
@@ -1534,7 +1535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 3915969777
+  GlobalObjectIdHash: 197833704
   InScenePlacedSourceGlobalObjectIdHash: 197833704
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -1563,7 +1564,6 @@ MonoBehaviour:
   lookSpeed: 2
   lookXLimit: 45
   animator: {fileID: 5859899796351721656}
-  spawnLoc: {fileID: 0}
 --- !u!114 &1418110034073989468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1595,3 +1595,24 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
+--- !u!65 &8696918936472169522
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9074078268780928093}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.36842406, y: 0.6438012, z: 1.3083078}
+  m_Center: {x: 0.011101224, y: 0.33897644, z: 0.09805167}

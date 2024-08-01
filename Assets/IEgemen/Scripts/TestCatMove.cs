@@ -23,7 +23,6 @@ public class TestCatMove : NetworkBehaviour
 
     void Start()
     {
-        gameObject.transform.position = new Vector3(-24,3, 0);
         characterController = GetComponent<CharacterController>();
         if (IsHost)
         {
@@ -33,6 +32,8 @@ public class TestCatMove : NetworkBehaviour
         {
             Debug.Log("CLIENTIM");
         }
+        
+        gameObject.transform.position = new Vector3(-24,3, 0);
     }
 
     void Update()

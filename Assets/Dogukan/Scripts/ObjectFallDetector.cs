@@ -2,21 +2,21 @@ using UnityEngine;
 
 public class ObjectFallDetector : MonoBehaviour
 {
-    public MessBarController messBarController; // Daðýnýklýk barý kontrolcüsü
-    public float messAmount = 0.1f; // Daðýnýklýk barýnýn artacaðý miktar
+    public MessBarController messBarController;// Daï¿½ï¿½nï¿½klï¿½k barï¿½nï¿½n artacaï¿½ï¿½ miktar
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Item"))
         {
+            Rigidbody itemRgdbdy = other.gameObject.GetComponent<Rigidbody>(); 
             ItemFallTracker fallTracker = other.GetComponent<ItemFallTracker>();
             if (fallTracker != null)
             {
                 if (!fallTracker.hasFallen)
                 {
-                    messBarController.IncreaseMessBar(messAmount);
-                    fallTracker.hasFallen = true; // Eþyanýn yere düþtüðünü iþaretle
-                    fallTracker.isPlaced = false; // Eþyanýn yerleþtirildiðini resetle
+                    messBarController.IncreaseMessBar(itemRgdbdy.mass);
+                    fallTracker.hasFallen = true; // Eï¿½yanï¿½n yere dï¿½ï¿½tï¿½ï¿½ï¿½nï¿½ iï¿½aretle
+                    fallTracker.isPlaced = false; // Eï¿½yanï¿½n yerleï¿½tirildiï¿½ini resetle
                 }
             }
         }

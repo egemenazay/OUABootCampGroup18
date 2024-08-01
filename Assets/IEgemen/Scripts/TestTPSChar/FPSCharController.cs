@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public class FPSCharController : MonoBehaviour
+public class FPSCharController : NetworkBehaviour
 {
     public Camera playerCamera;
     public float walkSpeed = 25f;
@@ -26,13 +27,29 @@ public class FPSCharController : MonoBehaviour
 
     void Start()
     {
+        if (IsHost)
+        {
+            Debug.Log("HOSTUM");
+        }
+        else
+        {
+            Debug.Log("CLIENTIM");
+        }
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
         currentStamina = maxStamina;
+        
+        gameObject.transform.position = new Vector3(-20,3, 0);
     }
 
     void Update()
     {
+        if (!IsOwner)
+        {
+            Debug.Log("OWNER DEĞİLİM");
+            playerCamera.enabled = false;
+            return;
+        }
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 
