@@ -21,11 +21,13 @@ public class FPSCharController : MonoBehaviour
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
     private CharacterController characterController;
+    private Animator animator;
     private bool canMove = true;
 
     void Start()
     {
         characterController = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
         currentStamina = maxStamina;
     }
 
@@ -61,9 +63,14 @@ public class FPSCharController : MonoBehaviour
             rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+            Debug.Log(characterController.velocity.magnitude);
         }
 
         HandleStamina(isRunning);
+
+        // Update animator parameters
+        animator.SetFloat("speed", characterController.velocity.magnitude);
+        animator.SetBool("grounded", characterController.isGrounded);
     }
 
     void HandleStamina(bool isRunning)

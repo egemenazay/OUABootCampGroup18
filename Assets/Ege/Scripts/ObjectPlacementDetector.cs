@@ -7,7 +7,7 @@ public class ObjectPlacementDetector : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Cat"))
+        if (other.CompareTag("Item"))
         {
             ItemFallTracker fallTracker = other.GetComponent<ItemFallTracker>();
             if (fallTracker != null && fallTracker.hasFallen && !fallTracker.isPlaced)

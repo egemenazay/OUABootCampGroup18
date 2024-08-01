@@ -32,17 +32,25 @@ public class Marker : MonoBehaviour
     {
         if (img == null || target == null || initialPosition == null)
         {
-            return; // img, target veya initialPosition atanmadýysa iþlemleri yapma
+            img.gameObject.SetActive(false); // Eðer img, target veya initialPosition atanmadýysa marker'ý gizle
+            return;
         }
 
+        UpdateMarkerPosition();
+    }
+
+    void UpdateMarkerPosition()
+    {
         if (img.gameObject.activeSelf)
         {
             float minX = img.GetPixelAdjustedRect().width / 2;
             float maxX = Screen.width - minX;
             float minY = img.GetPixelAdjustedRect().height / 2;
             float maxY = Screen.height - minY;
+
             Vector2 pos = Camera.main.WorldToScreenPoint(target.position + offset);
-            if (Vector3.Dot((target.position - transform.position), transform.forward) < 0)
+
+            if (Vector3.Dot((target.position - Camera.main.transform.position), Camera.main.transform.forward) < 0)
             {
                 // Target is behind the player
                 if (pos.x < Screen.width / 2)
@@ -54,9 +62,11 @@ public class Marker : MonoBehaviour
                     pos.x = minX;
                 }
             }
+
             pos.x = Mathf.Clamp(pos.x, minX, maxX);
             pos.y = Mathf.Clamp(pos.y, minY, maxY);
             img.transform.position = pos;
+
             meter.text = ((int)Vector3.Distance(initialPosition.position, target.position)).ToString() + "m"; // initialPosition'dan target'a olan mesafeyi hesapla
         }
     }
@@ -75,5 +85,9 @@ public class Marker : MonoBehaviour
     {
         target = null;
         initialPosition = null;
+        if (img != null)
+        {
+            img.gameObject.SetActive(false); // Marker'ý gizle
+        }
     }
 }
