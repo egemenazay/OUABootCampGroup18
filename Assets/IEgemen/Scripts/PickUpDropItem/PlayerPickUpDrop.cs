@@ -39,7 +39,6 @@ public class PlayerPickUpDrop : MonoBehaviour
             {
                 // Currently carrying something, drop
                 objectGrabbable.Drop();
-                marker.ClearTarget();
                 objectGrabbable = null;
                 placementTarget = null;
             }
@@ -69,7 +68,6 @@ public class PlayerPickUpDrop : MonoBehaviour
             if (hitCollider.CompareTag("placement"))
             {
                 placementTarget = hitCollider.transform;
-                marker.SetTarget(placementTarget, initialPosition);
                 return;
             }
         }

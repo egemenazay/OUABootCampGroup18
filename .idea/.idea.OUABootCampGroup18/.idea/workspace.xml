@@ -6,21 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a9f56074-2e1a-4aa3-9201-9067b05fad09" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OUABootCampGroup18/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OUABootCampGroup18/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/3P Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/3P Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Dogukan/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Dogukan/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Lobby.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Lobby.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/OnlineLobby.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/OnlineLobby.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/OnlineMirror.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/OnlineMirror.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Prefabs/TestPlayer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IEgemen/Prefabs/TestPlayer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/CharSelection/CharacterSelection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IEgemen/Scripts/CharSelection/CharacterSelection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/TestScene-Egemen.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/TestScene-Egemen.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ObjectDetectorPut.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ObjectDetectorPut.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IEgemen/Scripts/PickUpDropItem/PlayerPickUpDrop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IEgemen/Scripts/PickUpDropItem/PlayerPickUpDrop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +43,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;online-test&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -157,6 +144,8 @@
       <workItem from="1722352368229" duration="1245000" />
       <workItem from="1722358553407" duration="25000" />
       <workItem from="1722358597172" duration="5974000" />
+      <workItem from="1722534219081" duration="69000" />
+      <workItem from="1722534298209" duration="74000" />
     </task>
     <servers />
   </component>
