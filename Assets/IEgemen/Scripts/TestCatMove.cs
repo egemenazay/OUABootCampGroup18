@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public class TestCatMove : MonoBehaviour
+public class TestCatMove : NetworkBehaviour
 {
     public Camera playerCamera;
     public float walkSpeed = 6f;
@@ -22,13 +23,26 @@ public class TestCatMove : MonoBehaviour
 
     void Start()
     {
+        gameObject.transform.position = new Vector3(-24,3, 0);
         characterController = GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        if (IsHost)
+        {
+            Debug.Log("HOSTUM");
+        }
+        else
+        {
+            Debug.Log("CLIENTIM");
+        }
     }
 
     void Update()
     {
+        if (!IsOwner)
+        {
+            Debug.Log("OWNER DEĞİLİM");
+            playerCamera.enabled = false;
+            return;
+        }
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 

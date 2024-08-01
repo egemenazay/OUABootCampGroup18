@@ -1,64 +1,122 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using UnityEngine;
 using Mirror;
 using UnityEngine.UI;
 using TMPro;
+using Random = UnityEngine.Random;
+
+[System.Serializable]
+public class Match
+{
+    public string matchID;
+    public List<Player> players = new List<Player> ();
+
+    public Match(string matchID, Player player)
+    {
+        this.matchID = matchID;
+        players.Add (player);
+    }
+
+    public Match()
+    {
+        
+    }
+}
+
 
 public class MatchMaker : NetworkBehaviour
 {
-    public NetworkManager networkManager;
-
-    public Button hostButton;
-    public Button joinButton;
-    public TMP_InputField matchIDInput;
-
-
-    public void HostGame()
+    public static MatchMaker instance;
+    //SyncList server dan clientlere içeriklerinin paylaşıldığı listedir
+    public readonly SyncList<Match> matches = new SyncList<Match>();   //Match'leri tutan liste
+    public readonly SyncList<string> matchIDs = new SyncList<string>(); //Match ID'leri tutan liste
+    [SerializeField] private GameObject turnManagerPrefab;
+    [SerializeField] private GameObject catPrefab;
+    [SerializeField] private GameObject keeperPrefab;
+    
+    private void Start()
     {
-        string matchID = GenerateMatchID();
-        Debug.Log($"Generated Match ID: {matchID}");
+        instance = this;
+    }
 
-        if (MatchManager.Instance.HostGame(matchID, NetworkServer.localConnection))
+    public bool HostGame(string _matchID, Player _player,out int playerIndex)
+    {
+        playerIndex = -1;
+        if (!matchIDs.Contains(_matchID))  //MatchID daha önce kullanılmış mı diye check ediyor
         {
-            NetworkManager.singleton.StartHost();
+            matchIDs.Add(_matchID);
+            matches.Add(new Match(_matchID,_player)); 
+            Debug.Log("Match generated");
+            playerIndex = 1;
+            return true;
         }
         else
         {
-            Debug.Log("Failed to create match, match ID already exists.");
+            Debug.Log("Match ID already exists");
+            return false;
         }
     }
-
-    public void JoinGame()
+    public bool JoinGame(string _matchID, Player _player,out int playerIndex)
     {
-        string matchID = matchIDInput.text;
-        if (matchID.Length != 5)
+        playerIndex = -1;
+        if (matchIDs.Contains(_matchID))  //MatchID daha önce kullanılmış mı diye check ediyor
         {
-            Debug.Log("Match ID must be 5 characters long.");
-            return;
-        }
-
-        NetworkManager.singleton.networkAddress = "localhost"; // Sunucu adresi
-        NetworkManager.singleton.StartClient();
-
-
-        CmdJoinGame(matchID);
-    }
-
-    [Command]
-    void CmdJoinGame(string matchID)
-    {
-        if (MatchManager.Instance.JoinGame(matchID, connectionToClient))
-        {
-            // Başarılı giriş
+            for (int i = 0; i < matches.Count; i++)
+            {
+                if (matches[i].matchID == _matchID)
+                {
+                    matches[i].players.Add(_player);
+                    playerIndex = matches[i].players.Count;
+                    break;
+                }
+            }
+            Debug.Log("Match joined");
+            return true;
         }
         else
         {
-            // Başarısız giriş
+            Debug.Log("Match ID does not exists");
+            return false;
         }
     }
 
-    private string GenerateMatchID()
+    public void BeginGame(string _matchID)
+    {
+        GameObject newTurnManager = Instantiate(turnManagerPrefab);
+        NetworkServer.Spawn(newTurnManager);
+        newTurnManager.GetComponent<NetworkMatch>().matchId = _matchID.ToGuid();
+        TurnManager turnManager = newTurnManager.GetComponent<TurnManager>();
+
+        for (int i = 0; i < matches.Count ; i++)
+        {
+            if (matches[i].matchID == _matchID)
+            {
+                foreach (var player in matches[i].players)
+                {
+                    Player _player = player.GetComponent<Player>();
+                    turnManager.AddPlayer(_player);
+                    _player.StartGame();
+                    if (_player.playerIndex == 1)
+                    {
+                        Instantiate(catPrefab);
+                    }
+                    else
+                    {
+                        Instantiate(keeperPrefab);
+                    }
+                }
+                break;
+            }
+        }
+    }
+    
+    
+    public static string GenerateMatchID()
     {
         string _id = string.Empty;
         for (int i = 0; i < 5; i++)
@@ -73,29 +131,22 @@ public class MatchMaker : NetworkBehaviour
                 _id += (random - 26).ToString();
             }
         }
+        Debug.Log($"Random Match ID: {_id}");
         return _id;
     }
+}
 
-    private void OnMatchMessage(NetworkConnection conn, MatchMessage message)
+public static class MatchExtensions
+{
+    public static Guid ToGuid(this string id)
     {
-        if (message.success)
-        {
-            Debug.Log("Joined match successfully.");
-            // Oyunu başlat
-            MatchManager.Instance.StartGame(message.matchID);
-        }
-        else
-        {
-            Debug.Log("Failed to join match.");
-        }
+        MD5CryptoServiceProvider provider = new MD5CryptoServiceProvider();
+        byte[] inputBytes = Encoding.Default.GetBytes(id);
+        byte[] hashBytes = provider.ComputeHash(inputBytes);
+        return new Guid(hashBytes);
     }
 }
 
-public struct MatchMessage : NetworkMessage
-{
-    public bool success;
-    public string matchID;
-}
 
     
 

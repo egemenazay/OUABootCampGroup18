@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/IEgemen/Scenes/Lobby.unity
-    guid: 9f8915f1ca4460c488c0f56aae9267db
-  - enabled: 1
-    path: Assets/IEgemen/Scenes/OnlineMirror.unity
-    guid: 759eadc835551e84280aae5fd5edfbd5
+    path: Assets/IEgemen/Netcode/Online Game Netcode.unity
+    guid: c0761d71704c0884e80c6316b816d234
   m_configObjects: {}
