@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 981236348400623940}
   - component: {fileID: 6393929005905894138}
   - component: {fileID: 1269925106594834833}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 525 toilet roll prefab (1)
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 906232341709825091}
   - component: {fileID: 8324392271320365670}
   - component: {fileID: 2279130966281687426}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Toilet_Roll
   m_TagString: Untagged
   m_Icon: {fileID: 0}

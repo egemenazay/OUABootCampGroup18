@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 7322936968556132946}
   - component: {fileID: 4153141600001388876}
   - component: {fileID: 1035716419979488939}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 513 Towel
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -210,6 +210,10 @@ PrefabInstance:
     - target: {fileID: 6720917451725713830, guid: 9d17d63d4fbf0e64babe9861d3754b47, type: 3}
       propertyPath: m_Name
       value: Towel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6720917451725713830, guid: 9d17d63d4fbf0e64babe9861d3754b47, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 9012745524310762681, guid: 9d17d63d4fbf0e64babe9861d3754b47, type: 3}
       propertyPath: m_Convex

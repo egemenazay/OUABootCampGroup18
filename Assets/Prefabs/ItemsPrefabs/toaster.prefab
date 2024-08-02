@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 3020130197002205161}
   m_Layer: 9
   m_Name: toaster
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

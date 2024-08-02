@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class CatPush : MonoBehaviour
 {
-    public float pushForce = 5f; // Ýtme kuvveti
+    public float pushForce = 5f; // ï¿½tme kuvveti
 
     void OnCollisionEnter(Collision collision)
     {
-        // Eðer çarpýlan obje "Furniture" etiketi taþýyorsa
-        if (collision.gameObject.CompareTag("Furniture"))
+        // Eï¿½er ï¿½arpï¿½lan obje "Furniture" etiketi taï¿½ï¿½yorsa
+        if (collision.gameObject.CompareTag("Item"))
         {
             Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
             if (rb != null)

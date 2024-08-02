@@ -11,7 +11,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : NetworkBehaviour
 {
     [SerializeField] private Slider _slider;
-    [SerializeField] private GameObject endGameUI;
+    [SerializeField] private GameObject keeperWinUI;
+    [SerializeField] private GameObject catWinUI;
     [SerializeField] private GameObject gameUI;
     [SerializeField] private GameObject gameID;
     [SerializeField] private GameObject timer;
@@ -19,9 +20,13 @@ public class GameManager : NetworkBehaviour
 
     private void Update()
     {
-        if (_slider.value == _slider.maxValue || TimeCounter.timeRemaining == 0)
+        if (_slider.value == _slider.maxValue)
         {
-            FinishGameClientRpc();
+            FinishGameCatClientRpc();
+        }
+        else if (TimeCounter.timeRemaining == 0)
+        {
+            FinishGameKeeperRpc();
         }
 
         if (NetworkManager.Singleton.ConnectedClients.Count == 2)
@@ -31,9 +36,14 @@ public class GameManager : NetworkBehaviour
     }
 
     [ClientRpc(RequireOwnership = false)]
-    public void FinishGameClientRpc()
+    public void FinishGameCatClientRpc()
     {
-        endGameUI.GetComponent<Canvas>().enabled = true;
+        catWinUI.GetComponent<Canvas>().enabled = true;
+        gameUI.GetComponent<Canvas>().enabled = false;
+    }
+    public void FinishGameKeeperRpc()
+    {
+        keeperWinUI.GetComponent<Canvas>().enabled = true;
         gameUI.GetComponent<Canvas>().enabled = false;
     }
     
@@ -64,7 +74,8 @@ public class GameManager : NetworkBehaviour
     public void RestartGame()
     {
         TimeCounter.timeRemaining = 180;
-        endGameUI.GetComponent<Canvas>().enabled = false;
+        catWinUI.GetComponent<Canvas>().enabled = false;
+        keeperWinUI.GetComponent<Canvas>().enabled = false;
         timer.SetActive(false);
         StartCoroutine(ResetGameCoroutine());
     }

@@ -60,9 +60,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -283703087532773527, guid: ad4e5d194c7f96f4cb19868b3f79e27c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ad4e5d194c7f96f4cb19868b3f79e27c, type: 3}
       propertyPath: m_Name
       value: pottedPlant (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad4e5d194c7f96f4cb19868b3f79e27c, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ad4e5d194c7f96f4cb19868b3f79e27c, type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 6575875798965775011, guid: ad4e5d194c7f96f4cb19868b3f79e27c, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

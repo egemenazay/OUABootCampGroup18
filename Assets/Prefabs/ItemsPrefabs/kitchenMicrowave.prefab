@@ -64,6 +64,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: kitchenMicrowave
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 681bbbdba1da1844bbda7f027ac1bbe2, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 681bbbdba1da1844bbda7f027ac1bbe2, type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
+    - target: {fileID: 2212953966810781709, guid: 681bbbdba1da1844bbda7f027ac1bbe2, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607668393258877731, guid: 681bbbdba1da1844bbda7f027ac1bbe2, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

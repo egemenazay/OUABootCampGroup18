@@ -2,19 +2,18 @@ using UnityEngine;
 
 public class ObjectPlacementDetector : MonoBehaviour
 {
-    public MessBarController messBarController; // Daðýnýklýk barý kontrolcüsü
-    public float messAmount = 0.1f; // Daðýnýklýk barýnýn azalacaðý miktar
-
+    public MessBarController messBarController;
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Item"))
         {
             ItemFallTracker fallTracker = other.GetComponent<ItemFallTracker>();
+            Rigidbody rigidbody = other.gameObject.GetComponent<Rigidbody>();
             if (fallTracker != null && fallTracker.hasFallen && !fallTracker.isPlaced)
             {
-                messBarController.DecreaseMessBar(messAmount);
-                fallTracker.isPlaced = true; // Eþyanýn yerleþtirildiðini iþaretle
-                fallTracker.hasFallen = false; // Eþyanýn düþtüðünü resetle
+                messBarController.DecreaseMessBar(rigidbody.mass);
+                fallTracker.isPlaced = true; // Eï¿½yanï¿½n yerleï¿½tirildiï¿½ini iï¿½aretle
+                fallTracker.hasFallen = false; // Eï¿½yanï¿½n dï¿½ï¿½tï¿½ï¿½ï¿½nï¿½ resetle
             }
         }
     }

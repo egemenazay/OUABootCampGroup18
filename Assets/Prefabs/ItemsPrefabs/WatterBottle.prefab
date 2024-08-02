@@ -48,9 +48,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7530170112443999330, guid: 2894bde750c551744972421d56503720, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2894bde750c551744972421d56503720, type: 3}
       propertyPath: m_Name
       value: WatterBottle
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2894bde750c551744972421d56503720, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2894bde750c551744972421d56503720, type: 3}
+      propertyPath: m_TagString
+      value: Item
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
