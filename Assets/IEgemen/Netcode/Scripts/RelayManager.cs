@@ -10,7 +10,6 @@ using Unity.Services.Authentication;
 using Unity.Services.Core;
 using Unity.Services.Relay;
 using Unity.Services.Relay.Models;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class RelayManager : NetworkBehaviour
@@ -19,6 +18,12 @@ public class RelayManager : NetworkBehaviour
     [SerializeField] private TMP_InputField joinCodeInputField;
     [SerializeField] private GameObject networkUI;
     [SerializeField] private GameObject gameUI;
+    private string allocationId;
+
+    public void SetAllocationId(string id)
+    {
+        allocationId = id;
+    }
     public async void StartRelay()
     {
         string joinCode = await StartHostingWithRelay();
@@ -51,7 +56,10 @@ public class RelayManager : NetworkBehaviour
         return !string.IsNullOrEmpty(joinCode) && NetworkManager.Singleton.StartClient();
 
     }
-
+    public async Task CleanupRelayAsync()
+    {
+        await Task.Delay(100);
+    }
     public void SwapUI()
     {
         networkUI.GetComponent<Canvas>().enabled = false;

@@ -8,7 +8,7 @@ public class PlayerPickUpDrop : MonoBehaviour
     [SerializeField] private LayerMask pickUpLayerMask;
     //[SerializeField] private Marker marker;
     // [SerializeField] private Image crosshairImage; // Crosshair UI element
-    //[SerializeField] private Color defaultCrosshairColor = Color.white;
+    //[SerializeField] private Color de"faultCrosshairColor = Color.white;
     //[SerializeField] private Color interactableCrosshairColor = Color.green;
 
     private ObjectGrabbable objectGrabbable;

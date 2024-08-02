@@ -9,8 +9,14 @@ public class ClientSpawnRequest : NetworkBehaviour
     {
         if (IsClient && !IsHost)
         {
-            CustomPlayerSpawner customPlayerSpawner = FindObjectOfType<CustomPlayerSpawner>();
-            customPlayerSpawner.RequestSpawnClientCharacterServerRpc();
+            if (CustomPlayerSpawner.Instance != null)
+            {
+                CustomPlayerSpawner.Instance.RequestSpawnClientCharacterServerRpc();
+            }
+            else
+            {
+                Debug.LogError("CustomPlayerSpawner instance is not set.");
+            }
         }
         Destroy(gameObject); // Destroy the base player prefab since it is not needed anymore
     }
