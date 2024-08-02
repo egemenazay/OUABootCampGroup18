@@ -37,6 +37,7 @@ public class FPSCharController : NetworkBehaviour
         }
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
+        Cursor.lockState = CursorLockMode.Locked;
         currentStamina = maxStamina;
     }
 

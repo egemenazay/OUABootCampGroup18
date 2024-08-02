@@ -14,6 +14,8 @@ public class GameManager : NetworkBehaviour
     [SerializeField] private GameObject keeperWinUI;
     [SerializeField] private GameObject catWinUI;
     [SerializeField] private GameObject gameUI;
+    [SerializeField] private GameObject creditsUI;
+    [SerializeField] private GameObject mainMenuUI;
     [SerializeField] private GameObject gameID;
     [SerializeField] private GameObject timer;
     [SerializeField] private RelayManager _relayManager;
@@ -108,6 +110,22 @@ public class GameManager : NetworkBehaviour
             NetworkManager.Singleton.StartHost(); // or StartClient() based on your logic
         }
     }
+
+    public void OpenCredits()
+    {
+        creditsUI.SetActive(true);
+    }
+
+    public void CloseCredits()
+    {
+        creditsUI.SetActive(false);
+    }
+
+    public void OpenLobby()
+    {
+        mainMenuUI.SetActive(false);
+    }
+    
 }
 public static class TaskExtensions
 {
@@ -117,7 +135,6 @@ public static class TaskExtensions
         {
             yield return null;
         }
-
         if (task.IsFaulted)
         {
             Debug.LogError(task.Exception);

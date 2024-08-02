@@ -22,11 +22,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e1bb15a4d9c12e4aa91516f17a0c8de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.869906
+      value: -14.032
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e1bb15a4d9c12e4aa91516f17a0c8de, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.478
+      value: 7.621
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e1bb15a4d9c12e4aa91516f17a0c8de, type: 3}
       propertyPath: m_LocalPosition.z
@@ -94,6 +94,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6e1bb15a4d9c12e4aa91516f17a0c8de, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9081359394879256740}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6e1bb15a4d9c12e4aa91516f17a0c8de, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 131640489811581852}
   m_SourcePrefab: {fileID: 100100000, guid: 6e1bb15a4d9c12e4aa91516f17a0c8de, type: 3}
 --- !u!1 &1215299388983940056 stripped
 GameObject:
@@ -134,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GlobalObjectIdHash: 1461183900
-  InScenePlacedSourceGlobalObjectIdHash: 0
+  InScenePlacedSourceGlobalObjectIdHash: 1461183900
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
@@ -171,7 +174,7 @@ MonoBehaviour:
   UseQuaternionCompression: 0
   UseHalfFloatPrecision: 0
   InLocalSpace: 1
-  Interpolate: 0
+  Interpolate: 1
   SlerpPosition: 0
 --- !u!54 &8251789346005178453
 Rigidbody:
@@ -181,7 +184,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1215299388983940056}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 0.4
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -197,9 +200,9 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &483695010720883451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,3 +229,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasFallen: 0
   isPlaced: 0
+--- !u!114 &131640489811581852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215299388983940056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b0cf628970986d4db035ac342952f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NetworkPosition:
+    m_InternalValue: {x: 0, y: 0, z: 0}
+  NetworkRotation:
+    m_InternalValue: {x: 0, y: 0, z: 0, w: 0}

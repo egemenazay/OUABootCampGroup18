@@ -24,7 +24,7 @@ public class TestCatMove : NetworkBehaviour
     void Start()
     {
         characterController = GetComponent<CharacterController>();
-        
+        Cursor.lockState = CursorLockMode.Locked;
         if (IsHost)
         {
             Debug.Log("HOSTUM");
