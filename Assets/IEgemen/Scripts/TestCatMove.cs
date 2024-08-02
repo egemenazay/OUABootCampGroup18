@@ -25,7 +25,6 @@ public class TestCatMove : NetworkBehaviour
     {
         characterController = GetComponent<CharacterController>();
         
-        gameObject.transform.position = new Vector3(-24,3, 0);
         if (IsHost)
         {
             Debug.Log("HOSTUM");

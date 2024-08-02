@@ -9,6 +9,7 @@ public class CustomPlayerSpawner : NetworkBehaviour
 
     public GameObject HostCharacterPrefab;
     public GameObject ClientCharacterPrefab;
+    public GameObject spawnLocation;
 
     private void Awake()
     {
@@ -52,7 +53,7 @@ public class CustomPlayerSpawner : NetworkBehaviour
     private void SpawnCharacter(ulong clientId, bool isHost)
     {
         GameObject characterPrefab = isHost ? HostCharacterPrefab : ClientCharacterPrefab;
-        GameObject playerInstance = Instantiate(characterPrefab);
+        GameObject playerInstance = Instantiate(characterPrefab, spawnLocation.transform.position, Quaternion.identity);
         playerInstance.GetComponent<NetworkObject>().SpawnAsPlayerObject(clientId, true);
     }
 }
