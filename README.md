@@ -96,6 +96,33 @@ Cat Keeper bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir gün 
 ---
 
 # Sprint 3
+- Sprint içi puan değerlendirmesi 100 Puan olarak belirlenmiştir ve bu puan toplanmıştır.
+- **Toplantılar**: 3. Sprint ile birlikte her gün toplantı aldık ve birbirimizdne sürekli haberdar olduk.
+- **Sprint 2 board update**: Sprint Board Screenshot:
+<img width="1531" alt="Trello 2  Sprint" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/TrelloUpdate2.png">
+<strong>Geliştirme Sürecinden Görseller:<strong/>
+<img width="798" alt="ev-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/Ev%20ss.png">
+<img width="1919" alt="kedi-animasyon-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/kedianimasyonss.png">
+<img width="1918" alt="powerup-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/powerupss.png">
+<img width="1917" alt="powerup-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/evGorlsel1.png">
+<img width="1919" alt="powerup-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/evGorsel2.png">
+
+<strong>Sprint Review:<strong/>
+  
+- Oyunun tüm sistemleri çalışır hale getirildi
+- UI yapıldu
+- Online sistem yapıldı
+- Dağınıklık barı sistemi yapıldı
+- Bölüm tamamlandı
+- Oyun İndirilebilir hale getirildi ve yayınlandı
+- Yapay zekalı temizlik robotu modeli yapıldı
+- Sprint Review katılımcıları: Egemen Azay, Doğukan Taha Tıraş, Ege Gürel, Elifsu Genç
+
+
+<strong>Sprint Retrospective:<strong/>
+
+- Genel olarak süreçte hedeflerimize ne kadar zor veya kolay ulaşabileceğimizi doğru hesaplayamadık bundan dolayısıyla özellike sonlara doğru görev yığılmasıyla karşı karşıya kaldık.
+- Zorluklara rağmen ürünü çıkarmayı başardık
 
 
 
