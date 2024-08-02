@@ -5,11 +5,11 @@ Unity Group 18
 # Oyun İle İlgili Bilgiler
 
 ## Takım Elemanları
-- Egemen Azay: Scrum Master / Product Owner / Developer
+- Egemen Azay: Scrum Master / Developer
 - Doğukan Taha Tıraş: Developer
 - Ege Gürel: Developer
+- Elifsu Genç: Designer / Product Owner
 - Erva Nur Sönmez: Designer / Developer
-- Elifsu Genç: Designer / Developer
 
 ## Oyunun İsmi
 Cat Keeper
