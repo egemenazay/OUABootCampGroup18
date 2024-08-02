@@ -106,7 +106,7 @@ Cat Keeper bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir gün 
 <img width="1918" alt="ingame-2" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint3/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-08-02%20224812.png">
 
 <strong>Sprint Review:<strong/>
-  
+- İnsan karakter TPS'den FPS'e çevirildi
 - Oyunun tüm sistemleri çalışır hale getirildi
 - UI yapıldu
 - Online sistem yapıldı
