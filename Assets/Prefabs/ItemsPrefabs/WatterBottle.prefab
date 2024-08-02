@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: -7530170112443999330, guid: 2894bde750c551744972421d56503720, type: 3}
+      propertyPath: m_TagString
+      value: Item
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 2894bde750c551744972421d56503720, type: 3}
       propertyPath: m_Name
       value: WatterBottle
@@ -107,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 710525660
+  GlobalObjectIdHash: 1191797258
   InScenePlacedSourceGlobalObjectIdHash: 710525660
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1

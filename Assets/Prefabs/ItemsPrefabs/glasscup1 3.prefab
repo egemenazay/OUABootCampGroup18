@@ -22,15 +22,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e48903e577adfd649a93694d58f3caa0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -24.441906
+      value: -1.307
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e48903e577adfd649a93694d58f3caa0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.7129998
+      value: 4.283
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e48903e577adfd649a93694d58f3caa0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.3821564
+      value: 34.774
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e48903e577adfd649a93694d58f3caa0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -140,7 +140,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2836872409579762299}
   serializedVersion: 4
-  m_Mass: 0.3
+  m_Mass: 0.5
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -171,8 +171,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 3730487879
-  InScenePlacedSourceGlobalObjectIdHash: 0
+  GlobalObjectIdHash: 1126703849
+  InScenePlacedSourceGlobalObjectIdHash: 3730487879
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0

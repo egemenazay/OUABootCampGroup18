@@ -5,7 +5,7 @@ using Unity.Netcode;
 public class TimeCounter : NetworkBehaviour
 {
     public TextMeshProUGUI timerText;
-    public static float timeRemaining = 360; // 3 dakika (180 saniye)
+    public static float timeRemaining = 300; // 3 dakika (180 saniye)
     public static NetworkVariable<float> syncedTimeRemaining = new NetworkVariable<float>(timeRemaining);
 
     void Start()
