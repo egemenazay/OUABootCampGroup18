@@ -38,8 +38,6 @@ public class FPSCharController : NetworkBehaviour
         characterController = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
         currentStamina = maxStamina;
-        
-        gameObject.transform.position = new Vector3(-20,3, 0);
     }
 
     void Update()

@@ -1431,6 +1431,7 @@ GameObject:
   - component: {fileID: -4859818878418868194}
   - component: {fileID: -8717708845861543793}
   - component: {fileID: 5186816651059225938}
+  - component: {fileID: -7373707696299057932}
   - component: {fileID: -6624935899668108815}
   m_Layer: 0
   m_Name: Player Cat Mirror
@@ -1601,6 +1602,27 @@ MonoBehaviour:
   syncInterval: 0
   clientAuthority: 0
   animator: {fileID: 5859899796351721656}
+--- !u!114 &-7373707696299057932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9074078268780928093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 2595697206
+  InScenePlacedSourceGlobalObjectIdHash: 0
+  AlwaysReplicateAsRoot: 0
+  SynchronizeTransform: 1
+  ActiveSceneSynchronization: 0
+  SceneMigrationSynchronization: 1
+  SpawnWithObservers: 1
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
 --- !u!114 &-6624935899668108815
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1613,3 +1635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b0cf628970986d4db035ac342952f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NetworkPosition:
+    m_InternalValue: {x: 0, y: 0, z: 0}
+  NetworkRotation:
+    m_InternalValue: {x: 0, y: 0, z: 0, w: 0}
