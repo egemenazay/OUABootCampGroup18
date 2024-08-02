@@ -99,13 +99,11 @@ Cat Keeper bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir gün 
 - Sprint içi puan değerlendirmesi 100 Puan olarak belirlenmiştir ve bu puan toplanmıştır.
 - **Toplantılar**: 3. Sprint ile birlikte her gün toplantı aldık ve birbirimizdne sürekli haberdar olduk.
 - **Sprint 2 board update**: Sprint Board Screenshot:
-<img width="1531" alt="Trello 2  Sprint" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/TrelloUpdate2.png">
+<img width="1531" alt="Trello 3  Sprint" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint3/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-08-02%20230617.png">
 <strong>Geliştirme Sürecinden Görseller:<strong/>
-<img width="798" alt="ev-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/Ev%20ss.png">
-<img width="1919" alt="kedi-animasyon-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/kedianimasyonss.png">
-<img width="1918" alt="powerup-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/powerupss.png">
-<img width="1917" alt="powerup-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/evGorlsel1.png">
-<img width="1919" alt="powerup-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint2/evGorsel2.png">
+<img width="1919" alt="kedi-ss" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint3/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-08-02%20204211.png">
+<img width="1919" alt="ingame-1" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint3/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-08-02%20224702.png">
+<img width="1918" alt="ingame-2" src="https://github.com/egemenazay/OUABootCampGroup18/blob/main/ScrumDocuments/Sprint3/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202024-08-02%20224812.png">
 
 <strong>Sprint Review:<strong/>
   
