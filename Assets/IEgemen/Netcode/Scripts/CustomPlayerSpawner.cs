@@ -5,8 +5,23 @@ using Unity.Netcode;
 
 public class CustomPlayerSpawner : NetworkBehaviour
 {
+    public static CustomPlayerSpawner Instance { get; private set; }
+
     public GameObject HostCharacterPrefab;
     public GameObject ClientCharacterPrefab;
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // Optional: Keep this spawner across scene loads
+        }
+    }
 
     public override void OnNetworkSpawn()
     {

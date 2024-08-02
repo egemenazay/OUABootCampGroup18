@@ -1,10 +1,12 @@
 using UnityEngine;
 using TMPro;
+using Unity.Netcode;
 
-public class TimeCounter : MonoBehaviour
+public class TimeCounter : NetworkBehaviour
 {
     public TextMeshProUGUI timerText;
-    public float timeRemaining = 180; // 3 dakika (180 saniye)
+    public static float timeRemaining = 30; // 3 dakika (180 saniye)
+    public static NetworkVariable<float> syncedTimeRemaining = new NetworkVariable<float>(timeRemaining);
 
     void Start()
     {
@@ -21,7 +23,6 @@ public class TimeCounter : MonoBehaviour
         else
         {
             timeRemaining = 0;
-            // S�re bitti�inde yap�lacak i�lemler
         }
     }
 
