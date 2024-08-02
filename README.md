@@ -119,6 +119,7 @@ Cat Keeper bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir gün 
 
 <strong>Sprint Retrospective:<strong/>
 
+- Oyun gerekli bütçe bulunursa Steam platformunda yayınlanacak
 - Genel olarak süreçte hedeflerimize ne kadar zor veya kolay ulaşabileceğimizi doğru hesaplayamadık bundan dolayısıyla özellike sonlara doğru görev yığılmasıyla karşı karşıya kaldık.
 - Zorluklara rağmen ürünü çıkarmayı başardık
 
