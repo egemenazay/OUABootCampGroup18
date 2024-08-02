@@ -23,8 +23,7 @@ Cat Keeper bir online Co-Op macera oyunudur. Ev sahibinin işi olduğu bir gün 
 ## Oyunun Özellikleri
 - 3D
 - Multiplayer
-- Oyun içerisinde veriler tutmaktadır
-- AI düşman kontrolü
+- Zamana Karşı
 
 ## Hedef Kitle
 - Grup Oyunu sevenler
